@@ -46,42 +46,49 @@
     "href": "resume.html",
     "title": "Rose Wang’s CV",
     "section": "",
-    "text": "Data Scientist, Software Engineer.\n\nrose@example.com | My wikipedia page  | Download PDF\n\n\n\nA singer in the K-pop group BLACKPINK, under YG Entertainment. I am also a solo artist, and have released several singles and albums. I am known for my powerful vocals and stage presence. I have won several awards for my music, including the Golden Disc Award for Best Female Artist.\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples.\n\n\n\n\n1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow\n\n\n\n\n2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France\n\n\n\n\n\n\n1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001\n\n\n\n\n1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
+    "text": "[cite_start]Software Developer, Computer Science Student[cite: 1, 11, 13].\n\nshijia.engineer@gmail.com | LinkedIn | [cite_start]385-371-0078 [cite: 2]\n\n\n\n[cite_start]Software Developer at Brigham Young University-Idaho while pursuing a Bachelor’s in Computer Science (GPA 4.0/4.0)[cite: 11, 13].\n\n\n\n[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++[cite: 5].\n[cite_start]Frameworks: React, Next.js, React Native, Flask, Streamlit[cite: 6].\n[cite_start]Testing & Automation: Selenium, Storybook[cite: 9].\n\n\n\n\n[cite_start]Full-stack development, AI-powered dynamic gift recommendations, audio analysis functionality, and secure data layers for transactions[cite: 33, 42, 45, 46].\n\n\n\n\nApr 2025 - Expected Dec 2026 [cite_start]Brigham Young University-Idaho [cite: 11] - [cite_start]Computer Science: GPA 4.0/4.0 [cite: 11]\n\n\n\nOct 2025 [cite_start]2nd Place Winner, HackUSU, Sales Dashboard Factory Challenge [cite: 31] - [cite_start]Winner of the “Data App Factory” Challenge [cite: 32]\n\n\n\nMay 2025 - Present [cite_start]Software Developer, Brigham Young University-Idaho [cite: 13] - [cite_start]Maintained and enhanced 5+ production systems supporting 6+ university offices[cite: 14]. - [cite_start]Built and deployed 10+ iPaaS automations, improving data consistency[cite: 15]. - [cite_start]Partnered with 6+ departments to deliver process improvements that significantly improved support request turnaround[cite: 16].\nNov 2024 - Apr 2025 [cite_start]Software Engineer Intern, Route [cite: 17] - [cite_start]Assisted 30+ Shopify merchants with widget implementation and CSS styling[cite: 18]. - [cite_start]Solved 10+ integration issues weekly and ensured smooth plugin functionality[cite: 19]. - [cite_start]Delivered technical guidance to non-technical stakeholders to resolve front-end issues[cite: 20].\nJun 2024 - Aug 2024 [cite_start]Software Engineer Intern, Alysio [cite: 26] - [cite_start]Implemented Storybook to streamline React component testing and documentation[cite: 27]. - [cite_start]Used Chrome DevTools to debug and resolve 20+ UI/functional issues[cite: 28]. - [cite_start]Automated test scripts for login validation, reducing manual QA cycles[cite: 29].\nMay 2023 - Nov 2024 [cite_start]Software Support Technician, FamilySearch [cite: 21] - [cite_start]Automated repetitive web tasks using Selenium, cutting manual workflow time by 60%[cite: 22]. - [cite_start]Optimized 15+ application logic instances for speed and accuracy[cite: 23]. - [cite_start]Conducted 10+ software tests per week and identified critical bugs[cite: 24].\n\n\n\n\n\nOct 2025 [cite_start]Sales Dashboard Factory (HackUSU) [cite: 31] - [cite_start]Architected a secure data layer using Databricks SQL & Unity Catalog[cite: 33]. - [cite_start]Developed a SQL validator enforcing Role-Based Access Control (RBAC)[cite: 34]. - [cite_start]Tech Stack: Databricks, Python (Pandas), Streamlit[cite: 35].\nOct 2025 [cite_start]Santa’s Workshop [cite: 40] - [cite_start]Built a real-time gift-tracking web app using Next.js, React, and TypeScript[cite: 41]. - [cite_start]Implemented AI-powered gift recommendations with Google Genkit[cite: 42].\nMay 2025 - Jul 2025 [cite_start]Sing2Track [cite: 44] - [cite_start]Engineered a full-stack web application to record and process audio input[cite: 45]. - [cite_start]Developed audio analysis to convert vocal melodies into editable MIDI notes[cite: 46].\n\n\n\nNov 2025 [cite_start]Portfolio Web Page [cite: 36] - [cite_start]Architected a React-based portfolio featuring dynamic Tailwind CSS animations[cite: 37, 38].\nApr 2025 [cite_start]BYUI Login Extension [cite: 47] - [cite_start]Developed a Chrome extension saving users 10+ minutes daily through automated login[cite: 48]. - [cite_start]Implemented secure credential storage and auto-fill functionality[cite: 49].\n\n\n\n\n\n[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++ [cite: 5]\n[cite_start]Web & UI: HTML, CSS, Tailwind CSS [cite: 7]\n[cite_start]Cloud & Tools: AWS, SQL, Git/GitHub, Postman, Chrome DevTools [cite: 8]\n[cite_start]Testing: Selenium, Storybook [cite: 9]"
   },
   {
     "objectID": "resume.html#currently",
     "href": "resume.html#currently",
     "title": "Rose Wang’s CV",
     "section": "",
-    "text": "A singer in the K-pop group BLACKPINK, under YG Entertainment. I am also a solo artist, and have released several singles and albums. I am known for my powerful vocals and stage presence. I have won several awards for my music, including the Golden Disc Award for Best Female Artist.\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples."
+    "text": "[cite_start]Software Developer at Brigham Young University-Idaho while pursuing a Bachelor’s in Computer Science (GPA 4.0/4.0)[cite: 11, 13].\n\n\n\n[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++[cite: 5].\n[cite_start]Frameworks: React, Next.js, React Native, Flask, Streamlit[cite: 6].\n[cite_start]Testing & Automation: Selenium, Storybook[cite: 9].\n\n\n\n\n[cite_start]Full-stack development, AI-powered dynamic gift recommendations, audio analysis functionality, and secure data layers for transactions[cite: 33, 42, 45, 46]."
   },
   {
     "objectID": "resume.html#education",
     "href": "resume.html#education",
     "title": "Rose Wang’s CV",
     "section": "",
-    "text": "1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow"
+    "text": "Apr 2025 - Expected Dec 2026 [cite_start]Brigham Young University-Idaho [cite: 11] - [cite_start]Computer Science: GPA 4.0/4.0 [cite: 11]"
   },
   {
-    "objectID": "resume.html#awards",
-    "href": "resume.html#awards",
+    "objectID": "resume.html#awards-honors",
+    "href": "resume.html#awards-honors",
     "title": "Rose Wang’s CV",
     "section": "",
-    "text": "2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France"
+    "text": "Oct 2025 [cite_start]2nd Place Winner, HackUSU, Sales Dashboard Factory Challenge [cite: 31] - [cite_start]Winner of the “Data App Factory” Challenge [cite: 32]"
   },
   {
-    "objectID": "resume.html#publications",
-    "href": "resume.html#publications",
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
     "title": "Rose Wang’s CV",
     "section": "",
-    "text": "1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001"
+    "text": "May 2025 - Present [cite_start]Software Developer, Brigham Young University-Idaho [cite: 13] - [cite_start]Maintained and enhanced 5+ production systems supporting 6+ university offices[cite: 14]. - [cite_start]Built and deployed 10+ iPaaS automations, improving data consistency[cite: 15]. - [cite_start]Partnered with 6+ departments to deliver process improvements that significantly improved support request turnaround[cite: 16].\nNov 2024 - Apr 2025 [cite_start]Software Engineer Intern, Route [cite: 17] - [cite_start]Assisted 30+ Shopify merchants with widget implementation and CSS styling[cite: 18]. - [cite_start]Solved 10+ integration issues weekly and ensured smooth plugin functionality[cite: 19]. - [cite_start]Delivered technical guidance to non-technical stakeholders to resolve front-end issues[cite: 20].\nJun 2024 - Aug 2024 [cite_start]Software Engineer Intern, Alysio [cite: 26] - [cite_start]Implemented Storybook to streamline React component testing and documentation[cite: 27]. - [cite_start]Used Chrome DevTools to debug and resolve 20+ UI/functional issues[cite: 28]. - [cite_start]Automated test scripts for login validation, reducing manual QA cycles[cite: 29].\nMay 2023 - Nov 2024 [cite_start]Software Support Technician, FamilySearch [cite: 21] - [cite_start]Automated repetitive web tasks using Selenium, cutting manual workflow time by 60%[cite: 22]. - [cite_start]Optimized 15+ application logic instances for speed and accuracy[cite: 23]. - [cite_start]Conducted 10+ software tests per week and identified critical bugs[cite: 24]."
   },
   {
-    "objectID": "resume.html#occupation",
-    "href": "resume.html#occupation",
+    "objectID": "resume.html#projects",
+    "href": "resume.html#projects",
     "title": "Rose Wang’s CV",
     "section": "",
-    "text": "1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
+    "text": "Oct 2025 [cite_start]Sales Dashboard Factory (HackUSU) [cite: 31] - [cite_start]Architected a secure data layer using Databricks SQL & Unity Catalog[cite: 33]. - [cite_start]Developed a SQL validator enforcing Role-Based Access Control (RBAC)[cite: 34]. - [cite_start]Tech Stack: Databricks, Python (Pandas), Streamlit[cite: 35].\nOct 2025 [cite_start]Santa’s Workshop [cite: 40] - [cite_start]Built a real-time gift-tracking web app using Next.js, React, and TypeScript[cite: 41]. - [cite_start]Implemented AI-powered gift recommendations with Google Genkit[cite: 42].\nMay 2025 - Jul 2025 [cite_start]Sing2Track [cite: 44] - [cite_start]Engineered a full-stack web application to record and process audio input[cite: 45]. - [cite_start]Developed audio analysis to convert vocal melodies into editable MIDI notes[cite: 46].\n\n\n\nNov 2025 [cite_start]Portfolio Web Page [cite: 36] - [cite_start]Architected a React-based portfolio featuring dynamic Tailwind CSS animations[cite: 37, 38].\nApr 2025 [cite_start]BYUI Login Extension [cite: 47] - [cite_start]Developed a Chrome extension saving users 10+ minutes daily through automated login[cite: 48]. - [cite_start]Implemented secure credential storage and auto-fill functionality[cite: 49]."
+  },
+  {
+    "objectID": "resume.html#skills-summary",
+    "href": "resume.html#skills-summary",
+    "title": "Rose Wang’s CV",
+    "section": "",
+    "text": "[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++ [cite: 5]\n[cite_start]Web & UI: HTML, CSS, Tailwind CSS [cite: 7]\n[cite_start]Cloud & Tools: AWS, SQL, Git/GitHub, Postman, Chrome DevTools [cite: 8]\n[cite_start]Testing: Selenium, Storybook [cite: 9]"
   },
   {
     "objectID": "Machine_Learning/project5.html",
