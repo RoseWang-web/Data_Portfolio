@@ -20,293 +20,6 @@
     ]
   },
   {
-    "objectID": "Story_Telling/project4.html",
-    "href": "Story_Telling/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project2.html",
-    "href": "Story_Telling/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Shi-Jia Wang’s CV",
-    "section": "",
-    "text": "Software Developer, Computer Science Student.\n\nshijia.engineer@gmail.com | LinkedIn | 385-371-0078\n\n\n\nSoftware Developer at Brigham Young University-Idaho while pursuing a Bachelor’s in Computer Science (GPA 4.0/4.0).\n\n\n\nLanguages: Python, Java, JavaScript, TypeScript, C++.\nFrameworks: React, Next.js, React Native, Flask, Streamlit.\nTesting & Automation: Selenium, Storybook.\n\n\n\n\nFull-stack development, AI-powered dynamic gift recommendations, audio analysis functionality, and secure data layers for transactions.\n\n\n\n\nApr 2025 - Expected Dec 2026 Brigham Young University-Idaho - Computer Science: GPA 4.0/4.0\n\n\n\nOct 2025 2nd Place Winner, HackUSU, Sales Dashboard Factory Challenge - Winner of the “Data App Factory” Challenge\n\n\n\nMay 2025 - Present Software Developer, Brigham Young University-Idaho - Maintained and enhanced 5+ production systems supporting 6+ university offices. - Built and deployed 10+ iPaaS automations, reducing manual data entry and improving data consistency. - Partnered with 6+ departments to deliver process improvements that significantly improved support request turnaround.\nNov 2024 - Apr 2025 Software Engineer Intern, Route - Assisted 30+ Shopify merchants with widget implementation and CSS styling. - Solved 10+ integration issues weekly and ensured smooth plugin functionality. - Delivered technical guidance to non-technical stakeholders to resolve front-end issues.\nJun 2024 - Aug 2024 Software Engineer Intern, Alysio - Implemented Storybook to streamline React component testing and documentation. - Used Chrome DevTools to debug and resolve 20+ UI/functional issues. - Automated test scripts for login validation, reducing manual QA cycles.\nMay 2023 - Nov 2024 Software Support Technician, FamilySearch - Automated repetitive web tasks using Selenium, cutting manual workflow time by 60%. - Optimized 15+ application logic instances for speed and accuracy. - Conducted 10+ software tests per week and identified critical bugs.\n\n\n\n\n\nOct 2025 Sales Dashboard Factory (HackUSU) - Architected a secure data layer using Databricks SQL & Unity Catalog. - Developed a SQL validator enforcing Role-Based Access Control (RBAC). - Tech Stack: Databricks, Python (Pandas), Streamlit.\nOct 2025 Santa’s Workshop - Built a real-time gift-tracking web app using Next.js, React, and TypeScript. - Implemented AI-powered gift recommendations with Google Genkit.\nMay 2025 - Jul 2025 Sing2Track - Engineered a full-stack web application to record and process audio input. - Developed audio analysis to convert vocal melodies into editable MIDI notes.\n\n\n\nNov 2025 Portfolio Web Page - Architected a React-based portfolio featuring dynamic Tailwind CSS animations.\nApr 2025 BYUI Login Extension - Developed a Chrome extension saving users 10+ minutes daily through automated login. - Implemented secure credential storage and auto-fill functionality.\n\n\n\n\n\nLanguages: Python, Java, JavaScript, TypeScript, C++\nWeb & UI: HTML, CSS, Tailwind CSS\nCloud & Tools: AWS, SQL, Git/GitHub, Postman, Chrome DevTools\nTesting: Selenium, Storybook"
-  },
-  {
-    "objectID": "resume.html#currently",
-    "href": "resume.html#currently",
-    "title": "Shi-Jia Wang’s CV",
-    "section": "",
-    "text": "Software Developer at Brigham Young University-Idaho while pursuing a Bachelor’s in Computer Science (GPA 4.0/4.0).\n\n\n\nLanguages: Python, Java, JavaScript, TypeScript, C++.\nFrameworks: React, Next.js, React Native, Flask, Streamlit.\nTesting & Automation: Selenium, Storybook.\n\n\n\n\nFull-stack development, AI-powered dynamic gift recommendations, audio analysis functionality, and secure data layers for transactions."
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Shi-Jia Wang’s CV",
-    "section": "",
-    "text": "Apr 2025 - Expected Dec 2026 Brigham Young University-Idaho - Computer Science: GPA 4.0/4.0"
-  },
-  {
-    "objectID": "resume.html#awards-honors",
-    "href": "resume.html#awards-honors",
-    "title": "Shi-Jia Wang’s CV",
-    "section": "",
-    "text": "Oct 2025 2nd Place Winner, HackUSU, Sales Dashboard Factory Challenge - Winner of the “Data App Factory” Challenge"
-  },
-  {
-    "objectID": "resume.html#experience",
-    "href": "resume.html#experience",
-    "title": "Shi-Jia Wang’s CV",
-    "section": "",
-    "text": "May 2025 - Present Software Developer, Brigham Young University-Idaho - Maintained and enhanced 5+ production systems supporting 6+ university offices. - Built and deployed 10+ iPaaS automations, reducing manual data entry and improving data consistency. - Partnered with 6+ departments to deliver process improvements that significantly improved support request turnaround.\nNov 2024 - Apr 2025 Software Engineer Intern, Route - Assisted 30+ Shopify merchants with widget implementation and CSS styling. - Solved 10+ integration issues weekly and ensured smooth plugin functionality. - Delivered technical guidance to non-technical stakeholders to resolve front-end issues.\nJun 2024 - Aug 2024 Software Engineer Intern, Alysio - Implemented Storybook to streamline React component testing and documentation. - Used Chrome DevTools to debug and resolve 20+ UI/functional issues. - Automated test scripts for login validation, reducing manual QA cycles.\nMay 2023 - Nov 2024 Software Support Technician, FamilySearch - Automated repetitive web tasks using Selenium, cutting manual workflow time by 60%. - Optimized 15+ application logic instances for speed and accuracy. - Conducted 10+ software tests per week and identified critical bugs."
-  },
-  {
-    "objectID": "resume.html#projects",
-    "href": "resume.html#projects",
-    "title": "Shi-Jia Wang’s CV",
-    "section": "",
-    "text": "Oct 2025 Sales Dashboard Factory (HackUSU) - Architected a secure data layer using Databricks SQL & Unity Catalog. - Developed a SQL validator enforcing Role-Based Access Control (RBAC). - Tech Stack: Databricks, Python (Pandas), Streamlit.\nOct 2025 Santa’s Workshop - Built a real-time gift-tracking web app using Next.js, React, and TypeScript. - Implemented AI-powered gift recommendations with Google Genkit.\nMay 2025 - Jul 2025 Sing2Track - Engineered a full-stack web application to record and process audio input. - Developed audio analysis to convert vocal melodies into editable MIDI notes.\n\n\n\nNov 2025 Portfolio Web Page - Architected a React-based portfolio featuring dynamic Tailwind CSS animations.\nApr 2025 BYUI Login Extension - Developed a Chrome extension saving users 10+ minutes daily through automated login. - Implemented secure credential storage and auto-fill functionality."
-  },
-  {
-    "objectID": "resume.html#skills-summary",
-    "href": "resume.html#skills-summary",
-    "title": "Shi-Jia Wang’s CV",
-    "section": "",
-    "text": "Languages: Python, Java, JavaScript, TypeScript, C++\nWeb & UI: HTML, CSS, Tailwind CSS\nCloud & Tools: AWS, SQL, Git/GitHub, Postman, Chrome DevTools\nTesting: Selenium, Storybook"
-  },
-  {
-    "objectID": "Machine_Learning/project5.html",
-    "href": "Machine_Learning/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project3.html",
-    "href": "Machine_Learning/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html",
-    "href": "Machine_Learning/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Full Stack"
-    ]
-  },
-  {
-    "objectID": "full_stack.html#title-2-header",
-    "href": "full_stack.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Full Stack"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project4.html",
-    "href": "Full_Stack/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project2.html",
-    "href": "Full_Stack/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
-  },
-  {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
-  },
-  {
-    "objectID": "Competition/project5.html",
-    "href": "Competition/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Competition/project3.html",
-    "href": "Competition/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Competition/project1.html",
-    "href": "Competition/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project4.html",
-    "href": "Cleansing_Projects/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project2.html",
-    "href": "Cleansing_Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Exploration/project5.html",
-    "href": "Cleansing_Exploration/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Cleansing_Exploration/project3.html",
-    "href": "Cleansing_Exploration/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Cleansing_Exploration/project1.html",
-    "href": "Cleansing_Exploration/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "cleansing.html",
-    "href": "cleansing.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Cleansing"
-    ]
-  },
-  {
-    "objectID": "cleansing.html#title-2-header",
-    "href": "cleansing.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Cleansing"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Exploration/project2.html",
-    "href": "Cleansing_Exploration/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Cleansing_Exploration/project4.html",
-    "href": "Cleansing_Exploration/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Cleansing_Projects/project1.html",
-    "href": "Cleansing_Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
-      "Project 1"
-    ]
-  },
-  {
     "objectID": "Cleansing_Projects/project3.html",
     "href": "Cleansing_Projects/project3.html",
     "title": "Client Report - [Insert Project Title]",
@@ -329,45 +42,71 @@
     ]
   },
   {
-    "objectID": "Competition/project2.html",
-    "href": "Competition/project2.html",
+    "objectID": "notebooks/module01-assessment-polars.html",
+    "href": "notebooks/module01-assessment-polars.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This assignment will test how well you’re able to perform various data science-related tasks.\nEach Problem Group below will center around a particular dataset that you have worked with before.\nTo ensure you receive full credit for a question, make sure you demonstrate the appropriate polars, lets-plot, or other commands as requested in the provided code blocks.\nYou may find that some questions require multiple steps to fully answer. Others require some mental arithmetic in addition to polars commands. Use your best judgment."
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html#submission",
+    "href": "notebooks/module01-assessment-polars.html#submission",
+    "title": "Introduction",
+    "section": "Submission",
+    "text": "Submission\nEach problem group asks a series of questions. This assignment consists of two submissions:\n\nAfter completing the questions below, open the Module 01 Assessment Quiz in Canvas and enter your answers to these questions there.\nAfter completing and submitting the quiz, save this Colab notebook as a GitHub Gist (You’ll need to create a GitHub account for this), by selecting Save a copy as a GitHub Gist from the File menu above.\nIn Canvas, open the Module 01 Assessment GitHub Gist assignment and paste the GitHub Gist URL for this notebook. Then submit that assignment."
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html#problem-group-1",
+    "href": "notebooks/module01-assessment-polars.html#problem-group-1",
+    "title": "Introduction",
+    "section": "Problem Group 1",
+    "text": "Problem Group 1\nFor the questions in this group, you’ll work with the Netflix Movies Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv\n\nQuestion 1\nLoad the dataset into a Polars data frame and determine what data type is used to store the release_year feature.\n\nimport polars as pl\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv\"\ndf = pl.read_csv(url)\nprint(df['release_year'].dtype)\n\nInt64\n\n\n\n\nQuestion 2\nFilter your dataset so it contains only TV Shows. How many of those TV Shows were rated TV-Y7?\n\ndf_T = df.filter((pl.col(\"type\") == \"TV Show\") & (pl.col(\"rating\") == \"TV-Y7\"))\ndf_T.height\n\n100\n\n\n\n\nQuestion 3\nFurther filter your dataset so it only contains TV Shows released between the years 2000 and 2009 inclusive. How many of those shows were rated TV-Y7?\n\ndf_test = df.filter((pl.col(\"type\") == \"TV Show\") & (pl.col(\"release_year\") &lt;= 2009) & (pl.col(\"release_year\") &gt;= 2000 ) & (pl.col(\"rating\") == \"TV-Y7\"))\ndf_test\n\n\nshape: (4, 12)\n\n\n\nshow_id\ntype\ntitle\ndirector\ncast\ncountry\ndate_added\nrelease_year\nrating\nduration\nlisted_in\ndescription\n\n\ni64\nstr\nstr\nstr\nstr\nstr\nstr\ni64\nstr\nstr\nstr\nstr\n\n\n\n\n70213120\n\"TV Show\"\n\"Beyblade: Metal Fusion\"\nnull\n\"Aki Kanada, Satoshi Hino, Emir…\n\"Japan\"\n\"December 15, 2017\"\n2009\n\"TV-Y7\"\n\"1 Season\"\n\"Anime Series, Kids' TV\"\n\"In this anime adventure series…\n\n\n70177034\n\"TV Show\"\n\"Yu-Gi-Oh!\"\nnull\n\"Dan Green, Eric Stuart, Amy Bi…\n\"Japan\"\n\" March 31, 2018\"\n2005\n\"TV-Y7\"\n\"5 Seasons\"\n\"Anime Series, Kids' TV\"\n\"The lives of young Yugi Moto a…\n\n\n70308794\n\"TV Show\"\n\"What's New Scooby-Doo?\"\nnull\n\"Frank Welker, Casey Kasem, Min…\n\"United States\"\n\" December 15, 2019\"\n2005\n\"TV-Y7\"\n\"3 Seasons\"\n\"Kids' TV, TV Comedies\"\n\"Scooby-Doo and the gang enter …\n\n\n60036794\n\"TV Show\"\n\"Sonic X\"\nnull\n\"Suzanne Goldish, Dan Green, Ja…\n\"Japan\"\n\" December 1, 2019\"\n2004\n\"TV-Y7\"\n\"4 Seasons\"\n\"Anime Series, Kids' TV\"\n\"While battling the evil Dr. Eg…"
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html#problem-group-2",
+    "href": "notebooks/module01-assessment-polars.html#problem-group-2",
+    "title": "Introduction",
+    "section": "Problem Group 2",
+    "text": "Problem Group 2\nFor the questions in this group, you’ll work with the Cereal Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv\n\nQuestion 4\nAfter importing the dataset into a polars data frame, determine the median amount of protein in cereal brands manufactured by Kelloggs. (mfr code “K”)\n\nimport polars as pl\n\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv\"\ndf = pl.read_csv(url)\ntest=df.filter(mfr=\"K\")\ntest['protein'].median()\n\n\nshape: (23, 16)\n\n\n\nname\nmfr\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\n\n\nstr\nstr\nstr\ni64\ni64\ni64\ni64\nf64\nf64\ni64\ni64\ni64\ni64\nf64\nf64\nf64\n\n\n\n\n\"All-Bran\"\n\"K\"\n\"C\"\n70\n4\n1\n260\n9.0\n7.0\n5\n320\n25\n3\n1.0\n0.33\n59.425505\n\n\n\"All-Bran with Extra Fiber\"\n\"K\"\n\"C\"\n50\n4\n0\n140\n14.0\n8.0\n0\n330\n25\n3\n1.0\n0.5\n93.704912\n\n\n\"Apple Jacks\"\n\"K\"\n\"C\"\n110\n2\n0\n125\n1.0\n11.0\n14\n30\n25\n2\n1.0\n1.0\n33.174094\n\n\n\"Corn Flakes\"\n\"K\"\n\"C\"\n100\n2\n0\n290\n1.0\n21.0\n2\n35\n25\n1\n1.0\n1.0\n45.863324\n\n\n\"Corn Pops\"\n\"K\"\n\"C\"\n110\n1\n0\n90\n1.0\n13.0\n12\n20\n25\n2\n1.0\n1.0\n35.782791\n\n\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n\n\n\"Raisin Bran\"\n\"K\"\n\"C\"\n120\n3\n1\n210\n5.0\n14.0\n12\n240\n25\n2\n1.33\n0.75\n39.259197\n\n\n\"Raisin Squares\"\n\"K\"\n\"C\"\n90\n2\n0\n0\n2.0\n15.0\n6\n110\n25\n3\n1.0\n0.5\n55.333142\n\n\n\"Rice Krispies\"\n\"K\"\n\"C\"\n110\n2\n0\n290\n0.0\n22.0\n3\n35\n25\n1\n1.0\n1.0\n40.560159\n\n\n\"Smacks\"\n\"K\"\n\"C\"\n110\n2\n1\n70\n1.0\n9.0\n15\n40\n25\n2\n1.0\n0.75\n31.230054\n\n\n\"Special K\"\n\"K\"\n\"C\"\n110\n6\n0\n230\n1.0\n16.0\n3\n55\n25\n1\n1.0\n1.0\n53.131324\n\n\n\n\n\n\n\n\nQuestion 5\nIn order to comply with new government regulations, all cereals must now come with a “Healthiness” rating. This rating is calculated based on this formula:\nhealthiness = (protein + fiber) / sugar\nCreate a new healthiness column populated with values based on the above formula.\nThen, determine the median healthiness value for only General Mills cereals (mfr = “G”), rounded to two decimal places.\n\nt = df.filter(mfr=\"G\")\nt = t.with_columns(healthiness = (pl.col('protein') + pl.col('fiber'))/pl.col('sugars'))\nt['healthiness'].median()\n\n0.475"
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html#problem-group-3",
+    "href": "notebooks/module01-assessment-polars.html#problem-group-3",
+    "title": "Introduction",
+    "section": "Problem Group 3",
+    "text": "Problem Group 3\nFor the questions in this group, you’ll work with the Titanic Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/titanic.csv\n\nQuestion 6\nAfter loading the dataset into a polars DataFrame, create a new column called NameGroup that contains the first letter of the passenger’s surname in lower case.\nNote that in the dataset, passenger’s names are provided in the Name column and are listed as:\nSurname, Given names\nFor example, if a passenger’s Name is Braund, Mr. Owen Harris, the NameGroup column should contain the value b.\nThen count how many passengers have a NameGroup value of k.\n\nimport polars as pl\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/titanic.csv\"\ndf = pl.read_csv(url)\ndf_titanic = df.with_columns(NameGroup = pl.col('Name').str.slice(0, 1).str.to_lowercase())\nk_count = df_titanic.filter(NameGroup=\"k\").height\nk_count\n\n28"
+  },
+  {
+    "objectID": "Story_Telling/project3.html",
+    "href": "Story_Telling/project3.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Competition",
+      "Story Telling",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project5.html",
+    "href": "Story_Telling/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "Full_Stack/project2.html",
+    "href": "Full_Stack/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Full Stack",
       "Project 2"
-    ]
-  },
-  {
-    "objectID": "Competition/project4.html",
-    "href": "Competition/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Competition"
-    ]
-  },
-  {
-    "objectID": "competition.html#title-2-header",
-    "href": "competition.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Competition"
     ]
   },
   {
@@ -382,60 +121,13 @@
     ]
   },
   {
-    "objectID": "Full_Stack/project3.html",
-    "href": "Full_Stack/project3.html",
+    "objectID": "Full_Stack/project4.html",
+    "href": "Full_Stack/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Full Stack",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project5.html",
-    "href": "Full_Stack/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Machine_Learning/project2.html",
-    "href": "Machine_Learning/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project4.html",
-    "href": "Machine_Learning/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
       "Project 4"
     ]
   },
@@ -460,6 +152,327 @@
     ]
   },
   {
+    "objectID": "Cleansing_Exploration/project3.html",
+    "href": "Cleansing_Exploration/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project5.html",
+    "href": "Cleansing_Exploration/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "exploration.html#title-2-header",
+    "href": "exploration.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project2.html",
+    "href": "Machine_Learning/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project1.html",
+    "href": "Machine_Learning/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project4.html",
+    "href": "Machine_Learning/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "cleansing.html",
+    "href": "cleansing.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Cleansing"
+    ]
+  },
+  {
+    "objectID": "cleansing.html#title-2-header",
+    "href": "cleansing.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Cleansing"
+    ]
+  },
+  {
+    "objectID": "Competition/project3.html",
+    "href": "Competition/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Competition/project5.html",
+    "href": "Competition/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Rose Wang’s CV",
+    "section": "",
+    "text": "[cite_start]Software Developer, Computer Science Student[cite: 1, 11, 13].\n\nshijia.engineer@gmail.com | LinkedIn | [cite_start]385-371-0078 [cite: 2]\n\n\n\n[cite_start]Software Developer at Brigham Young University-Idaho while pursuing a Bachelor’s in Computer Science (GPA 4.0/4.0)[cite: 11, 13].\n\n\n\n[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++[cite: 5].\n[cite_start]Frameworks: React, Next.js, React Native, Flask, Streamlit[cite: 6].\n[cite_start]Testing & Automation: Selenium, Storybook[cite: 9].\n\n\n\n\n[cite_start]Full-stack development, AI-powered dynamic gift recommendations, audio analysis functionality, and secure data layers for transactions[cite: 33, 42, 45, 46].\n\n\n\n\nApr 2025 - Expected Dec 2026 [cite_start]Brigham Young University-Idaho [cite: 11] - [cite_start]Computer Science: GPA 4.0/4.0 [cite: 11]\n\n\n\nOct 2025 [cite_start]2nd Place Winner, HackUSU, Sales Dashboard Factory Challenge [cite: 31] - [cite_start]Winner of the “Data App Factory” Challenge [cite: 32]\n\n\n\nMay 2025 - Present [cite_start]Software Developer, Brigham Young University-Idaho [cite: 13] - [cite_start]Maintained and enhanced 5+ production systems supporting 6+ university offices[cite: 14]. - [cite_start]Built and deployed 10+ iPaaS automations, improving data consistency[cite: 15]. - [cite_start]Partnered with 6+ departments to deliver process improvements that significantly improved support request turnaround[cite: 16].\nNov 2024 - Apr 2025 [cite_start]Software Engineer Intern, Route [cite: 17] - [cite_start]Assisted 30+ Shopify merchants with widget implementation and CSS styling[cite: 18]. - [cite_start]Solved 10+ integration issues weekly and ensured smooth plugin functionality[cite: 19]. - [cite_start]Delivered technical guidance to non-technical stakeholders to resolve front-end issues[cite: 20].\nJun 2024 - Aug 2024 [cite_start]Software Engineer Intern, Alysio [cite: 26] - [cite_start]Implemented Storybook to streamline React component testing and documentation[cite: 27]. - [cite_start]Used Chrome DevTools to debug and resolve 20+ UI/functional issues[cite: 28]. - [cite_start]Automated test scripts for login validation, reducing manual QA cycles[cite: 29].\nMay 2023 - Nov 2024 [cite_start]Software Support Technician, FamilySearch [cite: 21] - [cite_start]Automated repetitive web tasks using Selenium, cutting manual workflow time by 60%[cite: 22]. - [cite_start]Optimized 15+ application logic instances for speed and accuracy[cite: 23]. - [cite_start]Conducted 10+ software tests per week and identified critical bugs[cite: 24].\n\n\n\n\n\nOct 2025 [cite_start]Sales Dashboard Factory (HackUSU) [cite: 31] - [cite_start]Architected a secure data layer using Databricks SQL & Unity Catalog[cite: 33]. - [cite_start]Developed a SQL validator enforcing Role-Based Access Control (RBAC)[cite: 34]. - [cite_start]Tech Stack: Databricks, Python (Pandas), Streamlit[cite: 35].\nOct 2025 [cite_start]Santa’s Workshop [cite: 40] - [cite_start]Built a real-time gift-tracking web app using Next.js, React, and TypeScript[cite: 41]. - [cite_start]Implemented AI-powered gift recommendations with Google Genkit[cite: 42].\nMay 2025 - Jul 2025 [cite_start]Sing2Track [cite: 44] - [cite_start]Engineered a full-stack web application to record and process audio input[cite: 45]. - [cite_start]Developed audio analysis to convert vocal melodies into editable MIDI notes[cite: 46].\n\n\n\nNov 2025 [cite_start]Portfolio Web Page [cite: 36] - [cite_start]Architected a React-based portfolio featuring dynamic Tailwind CSS animations[cite: 37, 38].\nApr 2025 [cite_start]BYUI Login Extension [cite: 47] - [cite_start]Developed a Chrome extension saving users 10+ minutes daily through automated login[cite: 48]. - [cite_start]Implemented secure credential storage and auto-fill functionality[cite: 49].\n\n\n\n\n\n[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++ [cite: 5]\n[cite_start]Web & UI: HTML, CSS, Tailwind CSS [cite: 7]\n[cite_start]Cloud & Tools: AWS, SQL, Git/GitHub, Postman, Chrome DevTools [cite: 8]\n[cite_start]Testing: Selenium, Storybook [cite: 9]"
+  },
+  {
+    "objectID": "resume.html#currently",
+    "href": "resume.html#currently",
+    "title": "Rose Wang’s CV",
+    "section": "",
+    "text": "[cite_start]Software Developer at Brigham Young University-Idaho while pursuing a Bachelor’s in Computer Science (GPA 4.0/4.0)[cite: 11, 13].\n\n\n\n[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++[cite: 5].\n[cite_start]Frameworks: React, Next.js, React Native, Flask, Streamlit[cite: 6].\n[cite_start]Testing & Automation: Selenium, Storybook[cite: 9].\n\n\n\n\n[cite_start]Full-stack development, AI-powered dynamic gift recommendations, audio analysis functionality, and secure data layers for transactions[cite: 33, 42, 45, 46]."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Rose Wang’s CV",
+    "section": "",
+    "text": "Apr 2025 - Expected Dec 2026 [cite_start]Brigham Young University-Idaho [cite: 11] - [cite_start]Computer Science: GPA 4.0/4.0 [cite: 11]"
+  },
+  {
+    "objectID": "resume.html#awards-honors",
+    "href": "resume.html#awards-honors",
+    "title": "Rose Wang’s CV",
+    "section": "",
+    "text": "Oct 2025 [cite_start]2nd Place Winner, HackUSU, Sales Dashboard Factory Challenge [cite: 31] - [cite_start]Winner of the “Data App Factory” Challenge [cite: 32]"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Rose Wang’s CV",
+    "section": "",
+    "text": "May 2025 - Present [cite_start]Software Developer, Brigham Young University-Idaho [cite: 13] - [cite_start]Maintained and enhanced 5+ production systems supporting 6+ university offices[cite: 14]. - [cite_start]Built and deployed 10+ iPaaS automations, improving data consistency[cite: 15]. - [cite_start]Partnered with 6+ departments to deliver process improvements that significantly improved support request turnaround[cite: 16].\nNov 2024 - Apr 2025 [cite_start]Software Engineer Intern, Route [cite: 17] - [cite_start]Assisted 30+ Shopify merchants with widget implementation and CSS styling[cite: 18]. - [cite_start]Solved 10+ integration issues weekly and ensured smooth plugin functionality[cite: 19]. - [cite_start]Delivered technical guidance to non-technical stakeholders to resolve front-end issues[cite: 20].\nJun 2024 - Aug 2024 [cite_start]Software Engineer Intern, Alysio [cite: 26] - [cite_start]Implemented Storybook to streamline React component testing and documentation[cite: 27]. - [cite_start]Used Chrome DevTools to debug and resolve 20+ UI/functional issues[cite: 28]. - [cite_start]Automated test scripts for login validation, reducing manual QA cycles[cite: 29].\nMay 2023 - Nov 2024 [cite_start]Software Support Technician, FamilySearch [cite: 21] - [cite_start]Automated repetitive web tasks using Selenium, cutting manual workflow time by 60%[cite: 22]. - [cite_start]Optimized 15+ application logic instances for speed and accuracy[cite: 23]. - [cite_start]Conducted 10+ software tests per week and identified critical bugs[cite: 24]."
+  },
+  {
+    "objectID": "resume.html#projects",
+    "href": "resume.html#projects",
+    "title": "Rose Wang’s CV",
+    "section": "",
+    "text": "Oct 2025 [cite_start]Sales Dashboard Factory (HackUSU) [cite: 31] - [cite_start]Architected a secure data layer using Databricks SQL & Unity Catalog[cite: 33]. - [cite_start]Developed a SQL validator enforcing Role-Based Access Control (RBAC)[cite: 34]. - [cite_start]Tech Stack: Databricks, Python (Pandas), Streamlit[cite: 35].\nOct 2025 [cite_start]Santa’s Workshop [cite: 40] - [cite_start]Built a real-time gift-tracking web app using Next.js, React, and TypeScript[cite: 41]. - [cite_start]Implemented AI-powered gift recommendations with Google Genkit[cite: 42].\nMay 2025 - Jul 2025 [cite_start]Sing2Track [cite: 44] - [cite_start]Engineered a full-stack web application to record and process audio input[cite: 45]. - [cite_start]Developed audio analysis to convert vocal melodies into editable MIDI notes[cite: 46].\n\n\n\nNov 2025 [cite_start]Portfolio Web Page [cite: 36] - [cite_start]Architected a React-based portfolio featuring dynamic Tailwind CSS animations[cite: 37, 38].\nApr 2025 [cite_start]BYUI Login Extension [cite: 47] - [cite_start]Developed a Chrome extension saving users 10+ minutes daily through automated login[cite: 48]. - [cite_start]Implemented secure credential storage and auto-fill functionality[cite: 49]."
+  },
+  {
+    "objectID": "resume.html#skills-summary",
+    "href": "resume.html#skills-summary",
+    "title": "Rose Wang’s CV",
+    "section": "",
+    "text": "[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++ [cite: 5]\n[cite_start]Web & UI: HTML, CSS, Tailwind CSS [cite: 7]\n[cite_start]Cloud & Tools: AWS, SQL, Git/GitHub, Postman, Chrome DevTools [cite: 8]\n[cite_start]Testing: Selenium, Storybook [cite: 9]"
+  },
+  {
+    "objectID": "Competition/project4.html",
+    "href": "Competition/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Competition/project1.html",
+    "href": "Competition/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Competition/project2.html",
+    "href": "Competition/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Full Stack"
+    ]
+  },
+  {
+    "objectID": "full_stack.html#title-2-header",
+    "href": "full_stack.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Full Stack"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project5.html",
+    "href": "Machine_Learning/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html",
+    "href": "Machine_Learning/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Competition"
+    ]
+  },
+  {
+    "objectID": "competition.html#title-2-header",
+    "href": "competition.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Competition"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Exploration/project4.html",
+    "href": "Cleansing_Exploration/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project1.html",
+    "href": "Cleansing_Exploration/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project2.html",
+    "href": "Cleansing_Exploration/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Full_Stack/project5.html",
+    "href": "Full_Stack/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Full Stack",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "Full_Stack/project3.html",
+    "href": "Full_Stack/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Full Stack",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project4.html",
+    "href": "Story_Telling/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 4"
+    ]
+  },
+  {
     "objectID": "Story_Telling/project1.html",
     "href": "Story_Telling/project1.html",
     "title": "Client Report - [Insert Project Title]",
@@ -471,25 +484,47 @@
     ]
   },
   {
-    "objectID": "Story_Telling/project3.html",
-    "href": "Story_Telling/project3.html",
+    "objectID": "Story_Telling/project2.html",
+    "href": "Story_Telling/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Story Telling",
-      "Project 3"
+      "Project 2"
     ]
   },
   {
-    "objectID": "Story_Telling/project5.html",
-    "href": "Story_Telling/project5.html",
+    "objectID": "Cleansing_Projects/project4.html",
+    "href": "Cleansing_Projects/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Story Telling",
-      "Project 5"
+      "Data Cleansing",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project1.html",
+    "href": "Cleansing_Projects/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project2.html",
+    "href": "Cleansing_Projects/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 2"
     ]
   }
 ]
