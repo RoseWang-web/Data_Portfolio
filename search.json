@@ -1,44 +1,55 @@
 [
   {
-    "objectID": "story_telling.html",
-    "href": "story_telling.html",
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics",
     "crumbs": [
-      "Story Telling"
+      "Full Stack"
     ]
   },
   {
-    "objectID": "story_telling.html#title-2-header",
-    "href": "story_telling.html#title-2-header",
+    "objectID": "full_stack.html#title-2-header",
+    "href": "full_stack.html#title-2-header",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics",
     "crumbs": [
-      "Story Telling"
+      "Full Stack"
     ]
   },
   {
-    "objectID": "Cleansing_Projects/project3.html",
-    "href": "Cleansing_Projects/project3.html",
+    "objectID": "Full_Stack/project1.html",
+    "href": "Full_Stack/project1.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Data Cleansing",
-      "Project 3"
+      "Full Stack",
+      "Project 1"
     ]
   },
   {
-    "objectID": "Cleansing_Projects/project5.html",
-    "href": "Cleansing_Projects/project5.html",
+    "objectID": "Full_Stack/project5.html",
+    "href": "Full_Stack/project5.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Data Cleansing",
+      "Full Stack",
       "Project 5"
+    ]
+  },
+  {
+    "objectID": "Full_Stack/project3.html",
+    "href": "Full_Stack/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Full Stack",
+      "Project 3"
     ]
   },
   {
@@ -77,58 +88,37 @@
     "text": "Problem Group 3\nFor the questions in this group, you’ll work with the Titanic Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/titanic.csv\n\nQuestion 6\nAfter loading the dataset into a polars DataFrame, create a new column called NameGroup that contains the first letter of the passenger’s surname in lower case.\nNote that in the dataset, passenger’s names are provided in the Name column and are listed as:\nSurname, Given names\nFor example, if a passenger’s Name is Braund, Mr. Owen Harris, the NameGroup column should contain the value b.\nThen count how many passengers have a NameGroup value of k.\n\nimport polars as pl\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/titanic.csv\"\ndf = pl.read_csv(url)\ndf_titanic = df.with_columns(NameGroup = pl.col('Name').str.slice(0, 1).str.to_lowercase())\nk_count = df_titanic.filter(NameGroup=\"k\").height\nk_count\n\n28"
   },
   {
-    "objectID": "Story_Telling/project3.html",
-    "href": "Story_Telling/project3.html",
+    "objectID": "Cleansing_Exploration/project2.html",
+    "href": "Cleansing_Exploration/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project4.html",
+    "href": "Cleansing_Exploration/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "cleansing.html",
+    "href": "cleansing.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
     "crumbs": [
-      "Story Telling",
-      "Project 3"
+      "Data Cleansing"
     ]
   },
   {
-    "objectID": "Story_Telling/project5.html",
-    "href": "Story_Telling/project5.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "cleansing.html#title-2-header",
+    "href": "cleansing.html#title-2-header",
+    "title": "about me",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "MarkDown Basics",
     "crumbs": [
-      "Story Telling",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project2.html",
-    "href": "Full_Stack/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project1.html",
-    "href": "Full_Stack/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project4.html",
-    "href": "Full_Stack/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 4"
+      "Data Cleansing"
     ]
   },
   {
@@ -152,90 +142,61 @@
     ]
   },
   {
-    "objectID": "Cleansing_Exploration/project3.html",
-    "href": "Cleansing_Exploration/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Cleansing_Exploration/project5.html",
-    "href": "Cleansing_Exploration/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "about me",
     "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
+    "text": "MarkDown Basics"
   },
   {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
     "title": "about me",
     "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
+    "text": "MarkDown Basics"
   },
   {
-    "objectID": "Machine_Learning/project2.html",
-    "href": "Machine_Learning/project2.html",
+    "objectID": "Story_Telling/project2.html",
+    "href": "Story_Telling/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Machine Learning",
+      "Story Telling",
       "Project 2"
     ]
   },
   {
-    "objectID": "Machine_Learning/project1.html",
-    "href": "Machine_Learning/project1.html",
+    "objectID": "Story_Telling/project4.html",
+    "href": "Story_Telling/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Machine Learning",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project4.html",
-    "href": "Machine_Learning/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
+      "Story Telling",
       "Project 4"
     ]
   },
   {
-    "objectID": "cleansing.html",
-    "href": "cleansing.html",
-    "title": "about me",
+    "objectID": "Competition/project1.html",
+    "href": "Competition/project1.html",
+    "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "MarkDown Basics",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Data Cleansing"
+      "Competition",
+      "Project 1"
     ]
   },
   {
-    "objectID": "cleansing.html#title-2-header",
-    "href": "cleansing.html#title-2-header",
-    "title": "about me",
+    "objectID": "Competition/project5.html",
+    "href": "Competition/project5.html",
+    "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "MarkDown Basics",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Data Cleansing"
+      "Competition",
+      "Project 5"
     ]
   },
   {
@@ -250,14 +211,175 @@
     ]
   },
   {
-    "objectID": "Competition/project5.html",
-    "href": "Competition/project5.html",
+    "objectID": "Machine_Learning/project2.html",
+    "href": "Machine_Learning/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project4.html",
+    "href": "Machine_Learning/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Case01_high_and_low_Econ_models.html",
+    "href": "Case01_high_and_low_Econ_models.html",
+    "title": "Your_Name - Data Science Portfolio",
+    "section": "",
+    "text": "import polars as pl\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.metrics import accuracy_score, precision_score, recall_score\n\n# ==========================================\n# 1. LOAD AND PREPROCESS DATA\n# ==========================================\ndata_url = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank.csv\"\n\nprint(\"🔄 Loading banking dataset...\")\ndf = pl.read_csv(data_url, infer_schema_length=None)\n\n# Task 4 Focus: Use median to split economic environments\nmedian_confidence = df[\"cons.conf.idx\"].median()\n\nhigh_confidence_df = df.filter(pl.col(\"cons.conf.idx\") &gt;= median_confidence)\nlow_confidence_df = df.filter(pl.col(\"cons.conf.idx\") &lt; median_confidence)\n\ndef prepare_model_data(data_frame: pl.DataFrame, target_column: str = \"y\"):\n    \"\"\"Maps target label to binary integers and applies one-hot encoding natively in Polars.\"\"\"\n    target = data_frame.select(\n        pl.col(target_column).map_elements(lambda val: 1 if val == \"yes\" else 0, return_dtype=pl.Int8)\n    )\n    features_df = data_frame.drop(target_column)\n    categorical_cols = [col for col in features_df.columns if features_df[col].dtype == pl.String]\n    features_encoded = features_df.to_dummies(columns=categorical_cols)\n\n    return features_encoded, target\n\nX_high, y_high = prepare_model_data(high_confidence_df)\nX_low, y_low = prepare_model_data(low_confidence_df)\n\n# ==========================================\n# 2. CREATE BALANCED TRAIN/TEST SPLITS\n# ==========================================\nX_train_high, X_test_high, y_train_high, y_test_high = train_test_split(\n    X_high.to_pandas(),\n    y_high.to_pandas().to_numpy().ravel(),\n    test_size=0.20,\n    random_state=42,\n    stratify=y_high.to_pandas()\n)\n\nX_train_low, X_test_low, y_train_low, y_test_low = train_test_split(\n    X_low.to_pandas(),\n    y_low.to_pandas().to_numpy().ravel(),\n    test_size=0.20,\n    random_state=42,\n    stratify=y_low.to_pandas()\n)\n\n# ==========================================\n# 3. ROBUST PIPELINE EVALUATION FUNCTION\n# ==========================================\ndef evaluate_and_summarize(model, X_train, X_test, y_train, y_test, model_name: str, baseline_counts=None):\n    \"\"\"Trains model, calculates metrics, and extracts top driving data attributes.\"\"\"\n    # Fit the machine learning model\n    model.fit(X_train, y_train)\n    y_pred = model.predict(X_test)\n\n    # Calculate operational metrics\n    accuracy = accuracy_score(y_test, y_pred)\n    precision = precision_score(y_test, y_pred, zero_division=0)\n    recall = recall_score(y_test, y_pred, zero_division=0)\n\n    # Format and display executive report block\n    print(\"\\n\" + \"=\"*50)\n    print(f\" 📑 EXECUTIVE SUMMARY FOR: {model_name.upper()}\")\n    print(\"=\"*50)\n\n    if baseline_counts is not None:\n        print(f\"📊 Dataset Baseline Counts:\\n{baseline_counts}\\n---\")\n\n    print(f\"Performance Scores:\")\n    print(f\"  • Accuracy:  {accuracy:.2f}\")\n    print(f\"  • Precision: {precision:.2f}\")\n    print(f\"  • Recall:    {recall:.2f}\")\n    print(\"---\")\n\n    # Feature Importance analysis extraction\n    if hasattr(model, 'feature_importances_'):\n        importances = model.feature_importances_\n        feature_names = X_train.columns\n\n        # Sort features based on how much they impact prediction accuracy\n        importance_df = pd.DataFrame({'Attribute': feature_names, 'Impact_Score': importances})\n        top_5 = importance_df.sort_values(by='Impact_Score', ascending=False).head(5)\n\n        print(\"💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\")\n        for idx, row in top_5.iterrows():\n            print(f\"  [{row['Impact_Score']:.4f}] ➔ {row['Attribute']}\")\n    else:\n        print(\"❌ Feature importances unavailable for this classifier profile.\")\n    print(\"=\"*50)\n\n# ==========================================\n# 4. RUN EXECUTIVES MODELS AND SUMMARIES\n# ==========================================\n# High Confidence Metrics & Importance\nhigh_baseline = y_high.group_by(\"y\").count()\nrf_high = RandomForestClassifier(max_depth=5, random_state=42, n_estimators=100)\nevaluate_and_summarize(rf_high, X_train_high, X_test_high, y_train_high, y_test_high, \"Random Forest (High Econ Scenario)\", high_baseline)\n\ndt_high = DecisionTreeClassifier(max_depth=5, random_state=42)\nevaluate_and_summarize(dt_high, X_train_high, X_test_high, y_train_high, y_test_high, \"Decision Tree (High Econ Scenario)\")\n\n# Low Confidence Metrics & Importance\nlow_baseline = y_low.group_by(\"y\").count()\nrf_low = RandomForestClassifier(max_depth=5, random_state=42, n_estimators=100)\nevaluate_and_summarize(rf_low, X_train_low, X_test_low, y_train_low, y_test_low, \"Random Forest (Low Econ Scenario)\", low_baseline)\n\ndt_low = DecisionTreeClassifier(max_depth=5, random_state=42)\nevaluate_and_summarize(dt_low, X_train_low, X_test_low, y_train_low, y_test_low, \"Decision Tree (Low Econ Scenario)\")\n\n🔄 Loading banking dataset...\n\n\n/tmp/ipykernel_24714/410228936.py:103: DeprecationWarning: `GroupBy.count` was renamed; use `GroupBy.len` instead\n  high_baseline = y_high.group_by(\"y\").count()\n\n\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: RANDOM FOREST (HIGH ECON SCENARIO)\n==================================================\n📊 Dataset Baseline Counts:\nshape: (2, 2)\n┌─────┬───────┐\n│ y   ┆ count │\n│ --- ┆ ---   │\n│ i8  ┆ u32   │\n╞═════╪═══════╡\n│ 0   ┆ 17337 │\n│ 1   ┆ 2529  │\n└─────┴───────┘\n---\nPerformance Scores:\n  • Accuracy:  0.90\n  • Precision: 0.71\n  • Recall:    0.31\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.2205] ➔ emp.var.rate\n  [0.1432] ➔ nr.employed\n  [0.1217] ➔ euribor3m\n  [0.0792] ➔ pdays\n  [0.0714] ➔ poutcome_success\n==================================================\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: DECISION TREE (HIGH ECON SCENARIO)\n==================================================\nPerformance Scores:\n  • Accuracy:  0.89\n  • Precision: 0.59\n  • Recall:    0.41\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.7912] ➔ emp.var.rate\n  [0.1244] ➔ pdays\n  [0.0182] ➔ euribor3m\n  [0.0140] ➔ day_of_week_mon\n  [0.0104] ➔ nr.employed\n==================================================\n\n\n/tmp/ipykernel_24714/410228936.py:111: DeprecationWarning: `GroupBy.count` was renamed; use `GroupBy.len` instead\n  low_baseline = y_low.group_by(\"y\").count()\n\n\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: RANDOM FOREST (LOW ECON SCENARIO)\n==================================================\n📊 Dataset Baseline Counts:\nshape: (2, 2)\n┌─────┬───────┐\n│ y   ┆ count │\n│ --- ┆ ---   │\n│ i8  ┆ u32   │\n╞═════╪═══════╡\n│ 0   ┆ 15524 │\n│ 1   ┆ 1679  │\n└─────┴───────┘\n---\nPerformance Scores:\n  • Accuracy:  0.91\n  • Precision: 0.69\n  • Recall:    0.05\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.1998] ➔ cons.conf.idx\n  [0.1179] ➔ euribor3m\n  [0.0863] ➔ pdays\n  [0.0822] ➔ cons.price.idx\n  [0.0656] ➔ poutcome_success\n==================================================\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: DECISION TREE (LOW ECON SCENARIO)\n==================================================\nPerformance Scores:\n  • Accuracy:  0.91\n  • Precision: 0.69\n  • Recall:    0.10\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.4968] ➔ cons.conf.idx\n  [0.1551] ➔ euribor3m\n  [0.0805] ➔ pdays\n  [0.0691] ➔ age\n  [0.0435] ➔ job_retired\n==================================================\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Projects/project2.html",
+    "href": "Cleansing_Projects/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project4.html",
+    "href": "Cleansing_Projects/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project3.html",
+    "href": "Cleansing_Projects/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project5.html",
+    "href": "Cleansing_Projects/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project1.html",
+    "href": "Cleansing_Projects/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html",
+    "href": "Machine_Learning/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project5.html",
+    "href": "Machine_Learning/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project1.html",
+    "href": "Machine_Learning/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Competition/project4.html",
+    "href": "Competition/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Competition",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Competition/project2.html",
+    "href": "Competition/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project3.html",
+    "href": "Story_Telling/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project5.html",
+    "href": "Story_Telling/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
       "Project 5"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project1.html",
+    "href": "Story_Telling/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 1"
     ]
   },
   {
@@ -310,78 +432,86 @@
     "text": "[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++ [cite: 5]\n[cite_start]Web & UI: HTML, CSS, Tailwind CSS [cite: 7]\n[cite_start]Cloud & Tools: AWS, SQL, Git/GitHub, Postman, Chrome DevTools [cite: 8]\n[cite_start]Testing: Selenium, Storybook [cite: 9]"
   },
   {
-    "objectID": "Competition/project4.html",
-    "href": "Competition/project4.html",
+    "objectID": "story_telling.html",
+    "href": "story_telling.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Story Telling"
+    ]
+  },
+  {
+    "objectID": "story_telling.html#title-2-header",
+    "href": "story_telling.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Story Telling"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Exploration/project3.html",
+    "href": "Cleansing_Exploration/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project5.html",
+    "href": "Cleansing_Exploration/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project1.html",
+    "href": "Cleansing_Exploration/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "exploration.html#title-2-header",
+    "href": "exploration.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "Full_Stack/project4.html",
+    "href": "Full_Stack/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Competition",
+      "Full Stack",
       "Project 4"
     ]
   },
   {
-    "objectID": "Competition/project1.html",
-    "href": "Competition/project1.html",
+    "objectID": "Full_Stack/project2.html",
+    "href": "Full_Stack/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Competition",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Competition/project2.html",
-    "href": "Competition/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
+      "Full Stack",
       "Project 2"
-    ]
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Full Stack"
-    ]
-  },
-  {
-    "objectID": "full_stack.html#title-2-header",
-    "href": "full_stack.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Full Stack"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project5.html",
-    "href": "Machine_Learning/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project3.html",
-    "href": "Machine_Learning/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 3"
     ]
   },
   {
@@ -402,129 +532,6 @@
     "text": "MarkDown Basics",
     "crumbs": [
       "Competition"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Exploration/project4.html",
-    "href": "Cleansing_Exploration/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Cleansing_Exploration/project1.html",
-    "href": "Cleansing_Exploration/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Cleansing_Exploration/project2.html",
-    "href": "Cleansing_Exploration/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Full_Stack/project5.html",
-    "href": "Full_Stack/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project3.html",
-    "href": "Full_Stack/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project4.html",
-    "href": "Story_Telling/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project1.html",
-    "href": "Story_Telling/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project2.html",
-    "href": "Story_Telling/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project4.html",
-    "href": "Cleansing_Projects/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project1.html",
-    "href": "Cleansing_Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project2.html",
-    "href": "Cleansing_Projects/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
-      "Project 2"
     ]
   }
 ]
