@@ -1,5 +1,45 @@
 [
   {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Competition"
+    ]
+  },
+  {
+    "objectID": "competition.html#title-2-header",
+    "href": "competition.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Competition"
+    ]
+  },
+  {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Full Stack"
+    ]
+  },
+  {
+    "objectID": "full_stack.html#title-2-header",
+    "href": "full_stack.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Full Stack"
+    ]
+  },
+  {
     "objectID": "cleansing.html",
     "href": "cleansing.html",
     "title": "about me",
@@ -20,53 +60,26 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
+    "objectID": "Machine_Learning/project1.html",
+    "href": "Machine_Learning/project1.html",
+    "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "MarkDown Basics"
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 1"
+    ]
   },
   {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
+    "objectID": "Machine_Learning/project3.html",
+    "href": "Machine_Learning/project3.html",
+    "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "notebooks/module01-assessment-polars.html",
-    "href": "notebooks/module01-assessment-polars.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "This assignment will test how well you’re able to perform various data science-related tasks.\nEach Problem Group below will center around a particular dataset that you have worked with before.\nTo ensure you receive full credit for a question, make sure you demonstrate the appropriate polars, lets-plot, or other commands as requested in the provided code blocks.\nYou may find that some questions require multiple steps to fully answer. Others require some mental arithmetic in addition to polars commands. Use your best judgment."
-  },
-  {
-    "objectID": "notebooks/module01-assessment-polars.html#submission",
-    "href": "notebooks/module01-assessment-polars.html#submission",
-    "title": "Introduction",
-    "section": "Submission",
-    "text": "Submission\nEach problem group asks a series of questions. This assignment consists of two submissions:\n\nAfter completing the questions below, open the Module 01 Assessment Quiz in Canvas and enter your answers to these questions there.\nAfter completing and submitting the quiz, save this Colab notebook as a GitHub Gist (You’ll need to create a GitHub account for this), by selecting Save a copy as a GitHub Gist from the File menu above.\nIn Canvas, open the Module 01 Assessment GitHub Gist assignment and paste the GitHub Gist URL for this notebook. Then submit that assignment."
-  },
-  {
-    "objectID": "notebooks/module01-assessment-polars.html#problem-group-1",
-    "href": "notebooks/module01-assessment-polars.html#problem-group-1",
-    "title": "Introduction",
-    "section": "Problem Group 1",
-    "text": "Problem Group 1\nFor the questions in this group, you’ll work with the Netflix Movies Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv\n\nQuestion 1\nLoad the dataset into a Polars data frame and determine what data type is used to store the release_year feature.\n\nimport polars as pl\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv\"\ndf = pl.read_csv(url)\nprint(df['release_year'].dtype)\n\nInt64\n\n\n\n\nQuestion 2\nFilter your dataset so it contains only TV Shows. How many of those TV Shows were rated TV-Y7?\n\ndf_T = df.filter((pl.col(\"type\") == \"TV Show\") & (pl.col(\"rating\") == \"TV-Y7\"))\ndf_T.height\n\n100\n\n\n\n\nQuestion 3\nFurther filter your dataset so it only contains TV Shows released between the years 2000 and 2009 inclusive. How many of those shows were rated TV-Y7?\n\ndf_test = df.filter((pl.col(\"type\") == \"TV Show\") & (pl.col(\"release_year\") &lt;= 2009) & (pl.col(\"release_year\") &gt;= 2000 ) & (pl.col(\"rating\") == \"TV-Y7\"))\ndf_test\n\n\nshape: (4, 12)\n\n\n\nshow_id\ntype\ntitle\ndirector\ncast\ncountry\ndate_added\nrelease_year\nrating\nduration\nlisted_in\ndescription\n\n\ni64\nstr\nstr\nstr\nstr\nstr\nstr\ni64\nstr\nstr\nstr\nstr\n\n\n\n\n70213120\n\"TV Show\"\n\"Beyblade: Metal Fusion\"\nnull\n\"Aki Kanada, Satoshi Hino, Emir…\n\"Japan\"\n\"December 15, 2017\"\n2009\n\"TV-Y7\"\n\"1 Season\"\n\"Anime Series, Kids' TV\"\n\"In this anime adventure series…\n\n\n70177034\n\"TV Show\"\n\"Yu-Gi-Oh!\"\nnull\n\"Dan Green, Eric Stuart, Amy Bi…\n\"Japan\"\n\" March 31, 2018\"\n2005\n\"TV-Y7\"\n\"5 Seasons\"\n\"Anime Series, Kids' TV\"\n\"The lives of young Yugi Moto a…\n\n\n70308794\n\"TV Show\"\n\"What's New Scooby-Doo?\"\nnull\n\"Frank Welker, Casey Kasem, Min…\n\"United States\"\n\" December 15, 2019\"\n2005\n\"TV-Y7\"\n\"3 Seasons\"\n\"Kids' TV, TV Comedies\"\n\"Scooby-Doo and the gang enter …\n\n\n60036794\n\"TV Show\"\n\"Sonic X\"\nnull\n\"Suzanne Goldish, Dan Green, Ja…\n\"Japan\"\n\" December 1, 2019\"\n2004\n\"TV-Y7\"\n\"4 Seasons\"\n\"Anime Series, Kids' TV\"\n\"While battling the evil Dr. Eg…"
-  },
-  {
-    "objectID": "notebooks/module01-assessment-polars.html#problem-group-2",
-    "href": "notebooks/module01-assessment-polars.html#problem-group-2",
-    "title": "Introduction",
-    "section": "Problem Group 2",
-    "text": "Problem Group 2\nFor the questions in this group, you’ll work with the Cereal Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv\n\nQuestion 4\nAfter importing the dataset into a polars data frame, determine the median amount of protein in cereal brands manufactured by Kelloggs. (mfr code “K”)\n\nimport polars as pl\n\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv\"\ndf = pl.read_csv(url)\ntest=df.filter(mfr=\"K\")\ntest['protein'].median()\n\n\nshape: (23, 16)\n\n\n\nname\nmfr\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\n\n\nstr\nstr\nstr\ni64\ni64\ni64\ni64\nf64\nf64\ni64\ni64\ni64\ni64\nf64\nf64\nf64\n\n\n\n\n\"All-Bran\"\n\"K\"\n\"C\"\n70\n4\n1\n260\n9.0\n7.0\n5\n320\n25\n3\n1.0\n0.33\n59.425505\n\n\n\"All-Bran with Extra Fiber\"\n\"K\"\n\"C\"\n50\n4\n0\n140\n14.0\n8.0\n0\n330\n25\n3\n1.0\n0.5\n93.704912\n\n\n\"Apple Jacks\"\n\"K\"\n\"C\"\n110\n2\n0\n125\n1.0\n11.0\n14\n30\n25\n2\n1.0\n1.0\n33.174094\n\n\n\"Corn Flakes\"\n\"K\"\n\"C\"\n100\n2\n0\n290\n1.0\n21.0\n2\n35\n25\n1\n1.0\n1.0\n45.863324\n\n\n\"Corn Pops\"\n\"K\"\n\"C\"\n110\n1\n0\n90\n1.0\n13.0\n12\n20\n25\n2\n1.0\n1.0\n35.782791\n\n\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n\n\n\"Raisin Bran\"\n\"K\"\n\"C\"\n120\n3\n1\n210\n5.0\n14.0\n12\n240\n25\n2\n1.33\n0.75\n39.259197\n\n\n\"Raisin Squares\"\n\"K\"\n\"C\"\n90\n2\n0\n0\n2.0\n15.0\n6\n110\n25\n3\n1.0\n0.5\n55.333142\n\n\n\"Rice Krispies\"\n\"K\"\n\"C\"\n110\n2\n0\n290\n0.0\n22.0\n3\n35\n25\n1\n1.0\n1.0\n40.560159\n\n\n\"Smacks\"\n\"K\"\n\"C\"\n110\n2\n1\n70\n1.0\n9.0\n15\n40\n25\n2\n1.0\n0.75\n31.230054\n\n\n\"Special K\"\n\"K\"\n\"C\"\n110\n6\n0\n230\n1.0\n16.0\n3\n55\n25\n1\n1.0\n1.0\n53.131324\n\n\n\n\n\n\n\n\nQuestion 5\nIn order to comply with new government regulations, all cereals must now come with a “Healthiness” rating. This rating is calculated based on this formula:\nhealthiness = (protein + fiber) / sugar\nCreate a new healthiness column populated with values based on the above formula.\nThen, determine the median healthiness value for only General Mills cereals (mfr = “G”), rounded to two decimal places.\n\nt = df.filter(mfr=\"G\")\nt = t.with_columns(healthiness = (pl.col('protein') + pl.col('fiber'))/pl.col('sugars'))\nt['healthiness'].median()\n\n0.475"
-  },
-  {
-    "objectID": "notebooks/module01-assessment-polars.html#problem-group-3",
-    "href": "notebooks/module01-assessment-polars.html#problem-group-3",
-    "title": "Introduction",
-    "section": "Problem Group 3",
-    "text": "Problem Group 3\nFor the questions in this group, you’ll work with the Titanic Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/titanic.csv\n\nQuestion 6\nAfter loading the dataset into a polars DataFrame, create a new column called NameGroup that contains the first letter of the passenger’s surname in lower case.\nNote that in the dataset, passenger’s names are provided in the Name column and are listed as:\nSurname, Given names\nFor example, if a passenger’s Name is Braund, Mr. Owen Harris, the NameGroup column should contain the value b.\nThen count how many passengers have a NameGroup value of k.\n\nimport polars as pl\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/titanic.csv\"\ndf = pl.read_csv(url)\ndf_titanic = df.with_columns(NameGroup = pl.col('Name').str.slice(0, 1).str.to_lowercase())\nk_count = df_titanic.filter(NameGroup=\"k\").height\nk_count\n\n28"
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 3"
+    ]
   },
   {
     "objectID": "Cleansing_Projects/project2.html",
@@ -80,14 +93,14 @@
     ]
   },
   {
-    "objectID": "Cleansing_Projects/project3.html",
-    "href": "Cleansing_Projects/project3.html",
+    "objectID": "Cleansing_Projects/project5.html",
+    "href": "Cleansing_Projects/project5.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Data Cleansing",
-      "Project 3"
+      "Project 5"
     ]
   },
   {
@@ -102,6 +115,26 @@
     ]
   },
   {
+    "objectID": "story_telling.html",
+    "href": "story_telling.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Story Telling"
+    ]
+  },
+  {
+    "objectID": "story_telling.html#title-2-header",
+    "href": "story_telling.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Story Telling"
+    ]
+  },
+  {
     "objectID": "Story_Telling/project1.html",
     "href": "Story_Telling/project1.html",
     "title": "Client Report - [Insert Project Title]",
@@ -113,25 +146,89 @@
     ]
   },
   {
-    "objectID": "Story_Telling/project5.html",
-    "href": "Story_Telling/project5.html",
+    "objectID": "Story_Telling/project3.html",
+    "href": "Story_Telling/project3.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Story Telling",
-      "Project 5"
+      "Project 3"
     ]
   },
   {
-    "objectID": "Full_Stack/project2.html",
-    "href": "Full_Stack/project2.html",
+    "objectID": "notebooks/starter_signs.html",
+    "href": "notebooks/starter_signs.html",
+    "title": "Testing the model",
+    "section": "",
+    "text": "# Note: After you run this cell, the training and test data will be available in\n# the file browser. (Click the folder icon on the left to view it)\n#\n# If you don't see the data after the cell completes, click the refresh button\n# in the file browser (folder icon with circular arrow)\n\n# First, let's download and unzip the data\n!echo \"Downloading files...\"\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/training1.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/training2.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/holdout.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/mini_holdout.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/mini_holdout_answers.csv\n\n!echo \"Unzipping files...\"\n!unzip -q /content/training1.zip\n!unzip -q /content/training2.zip\n!unzip -q /content/holdout.zip\n!unzip -q /content/mini_holdout.zip\n\n# Combine the two traning directories\n!echo \"Merging training data...\"\n!mkdir /content/training\n!mv /content/training1/* /content/training\n!mv /content/training2/* /content/training\n\n# Cleanup\n!echo \"Cleaning up...\"\n!rmdir /content/training1\n!rmdir /content/training2\n!rm training1.zip\n!rm training2.zip\n!rm holdout.zip\n!rm mini_holdout.zip\n\n!echo \"Data ready.\"\n\nDownloading files...\nUnzipping files...\nMerging training data...\nCleaning up...\nData ready.\n\n\n\n# ==========================================\n# 2. Imports & Preprocessing Generators\n# ==========================================\nimport os\nimport numpy as np\nimport pandas as pd\nimport tensorflow as tf\nfrom tensorflow import keras\nfrom tensorflow.keras.preprocessing.image import ImageDataGenerator\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization\n\n# Set image constraints\ntraining_dir = '/content/training/'\nimage_size = (48, 48)  # Upgraded from 100x100 to 48x48 for optimal mobile speed & detail\nbatch_size = 32\n\n# Training generator with safe spatial adjustments (No horizontal/vertical flips!)\ntrain_datagen = ImageDataGenerator(\n    rescale=1./255,\n    rotation_range=15,\n    width_shift_range=0.1,\n    height_shift_range=0.1,\n    brightness_range=[0.7, 1.3],\n    validation_split=0.2\n)\n\nvalidation_datagen = ImageDataGenerator(\n    rescale=1./255,\n    validation_split=0.2\n)\n\ntrain_generator = train_datagen.flow_from_directory(\n    training_dir,\n    target_size=image_size,\n    subset=\"training\",\n    batch_size=batch_size,\n    class_mode='sparse',\n    seed=42,\n    shuffle=True\n)\n\nvalidation_generator = validation_datagen.flow_from_directory(\n    training_dir,\n    target_size=image_size,\n    batch_size=batch_size,\n    class_mode='sparse',\n    subset=\"validation\",\n    seed=42,\n    shuffle=False\n)\n\nFound 31368 images belonging to 43 classes.\nFound 7841 images belonging to 43 classes.\n\n\n\nfrom google.colab import drive\ndrive.mount('/content/drive')\n\nMounted at /content/drive\n\n\n\n# We're using keras' ImageDataGenerator class to load our image data.\n# See (https://keras.io/api/preprocessing/image/#imagedatagenerator-class) for details\n#\n# A couple of things to note:\n# 1. We're specifying a number for the seed, so we'll always get the same shuffle and split of our images.\n# 2. Class names are inferred automatically from the image subdirectory names.\n# 3. We're splitting the training data into 80% training, 20% validation.\n\n\ntraining_dir = '/content/training/'\nimage_size = (100, 100)\n\n# Split up the training data images into training and validations sets\n# We'll use and ImageDataGenerator to do the splits\n# ImageDataGenerator can also be used to do preprocessing and agumentation on the files as can be seen with rescale\n\ntrain_datagen = ImageDataGenerator(\n        rescale=1./255,\n        validation_split=.2\n        )\nvalidation_datagen = ImageDataGenerator(\n        rescale=1./255,\n        validation_split=.2\n        )\n\ntrain_generator = train_datagen.flow_from_directory(\n        training_dir,\n        target_size = image_size,\n        subset=\"training\",\n        batch_size=32,\n        class_mode='sparse',\n        seed=42,shuffle=True)\nvalidation_generator = validation_datagen.flow_from_directory(\n        training_dir,\n        target_size=image_size,\n        batch_size=32,\n        class_mode='sparse',\n        subset=\"validation\",\n        seed=42)\n\n\nFound 31368 images belonging to 43 classes.\nFound 7841 images belonging to 43 classes.\n\n\n\n#these might come in handy\ntarget_names = ['Speed_20', 'Speed_30', 'Speed_50', 'Speed_60', 'Speed_70',\n               'Speed_80','Speed_Limit_Ends', 'Speed_100', 'Speed_120', 'Overtaking_Prohibited',\n               'Overtakeing_Prohibited_Trucks', 'Priority', 'Priority_Road_Ahead', 'Yield', 'STOP',\n               'Entry_Forbidden', 'Trucks_Forbidden', 'No_Entry(one-way traffic)', 'General Danger(!)', 'Left_Curve_Ahead',\n               'Right_Curve_Ahead', 'Double_Curve', 'Poor_Surface_Ahead', 'Slippery_Surface_Ahead', 'Road_Narrows_On_Right',\n               'Roadwork_Ahead', 'Traffic_Light_Ahead', 'Warning_Pedestrians', 'Warning_Children', 'Warning_Bikes',\n               'Ice_Snow', 'Deer_Crossing', 'End_Previous_Limitation', 'Turning_Right_Compulsory', 'Turning_Left_Compulsory',\n               'Ahead_Only', 'Straight_Or_Right_Mandatory', 'Straight_Or_Left_Mandatory', 'Passing_Right_Compulsory', 'Passing_Left_Compulsory',\n               'Roundabout', 'End_Overtaking_Prohibition', 'End_Overtaking_Prohibition_Trucks']\n\n\n# View 9 images and their class labels\nimport matplotlib.pyplot as plt\nplt.figure(figsize=(10, 10))\nimages, labels = next(train_generator)  # Assuming train_generator is a generator\nbatch_size = images.shape[0]\n\nfor i in range(min(9, batch_size)):\n    ax = plt.subplot(3, 3, i + 1)\n    plt.imshow((images[i] * 255).astype(\"uint8\"))\n    plt.title(int(labels[i]))\n    plt.axis(\"off\")\n\nplt.show()\n\n\n\n\n\n\n\n\n\n# ==========================================\n# 3. Build Custom CNN Architecture (Fixed for 100x100)\n# ==========================================\nnum_classes = len(train_generator.class_indices)\n\nmodel = Sequential([\n    # First Convolutional Layer Group - Updated input_shape to 100x100\n    Conv2D(32, (3, 3), activation='relu', padding='same', input_shape=(100, 100, 3)),\n    BatchNormalization(),\n    Conv2D(32, (3, 3), activation='relu'),\n    MaxPooling2D(pool_size=(2, 2)),\n    Dropout(0.2),\n\n    # Second Convolutional Layer Group\n    Conv2D(64, (3, 3), activation='relu', padding='same'),\n    BatchNormalization(),\n    Conv2D(64, (3, 3), activation='relu'),\n    MaxPooling2D(pool_size=(2, 2)),\n    Dropout(0.3),\n\n    # Classification Head\n    Flatten(),\n    Dense(256, activation='relu'),\n    BatchNormalization(),\n    Dropout(0.4),\n    Dense(num_classes, activation='softmax')\n])\n\nmodel.compile(\n    optimizer='adam',\n    loss='sparse_categorical_crossentropy',\n    metrics=['accuracy']\n)\n\nmodel.summary()\n\nModel: \"sequential_1\"\n\n\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓\n┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩\n│ conv2d_4 (Conv2D)               │ (None, 100, 100, 32)   │           896 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ batch_normalization_3           │ (None, 100, 100, 32)   │           128 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ conv2d_5 (Conv2D)               │ (None, 98, 98, 32)     │         9,248 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ max_pooling2d_2 (MaxPooling2D)  │ (None, 49, 49, 32)     │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dropout_3 (Dropout)             │ (None, 49, 49, 32)     │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ conv2d_6 (Conv2D)               │ (None, 49, 49, 64)     │        18,496 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ batch_normalization_4           │ (None, 49, 49, 64)     │           256 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ conv2d_7 (Conv2D)               │ (None, 47, 47, 64)     │        36,928 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ max_pooling2d_3 (MaxPooling2D)  │ (None, 23, 23, 64)     │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dropout_4 (Dropout)             │ (None, 23, 23, 64)     │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ flatten_1 (Flatten)             │ (None, 33856)          │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dense_2 (Dense)                 │ (None, 256)            │     8,667,392 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ batch_normalization_5           │ (None, 256)            │         1,024 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dropout_5 (Dropout)             │ (None, 256)            │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dense_3 (Dense)                 │ (None, 43)             │        11,051 │\n└─────────────────────────────────┴────────────────────────┴───────────────┘\n\n\n\n Total params: 8,745,419 (33.36 MB)\n\n\n\n Trainable params: 8,744,715 (33.36 MB)\n\n\n\n Non-trainable params: 704 (2.75 KB)\n\n\n\n\n# ==========================================\n# 4. Model Training\n# ==========================================\nprint(\"\\nStarting Model Training...\")\nhistory = model.fit(\n    train_generator,\n    validation_data=validation_generator,\n    epochs=15,\n    verbose=1\n)\n\n\nStarting Model Training...\n\nEpoch 1/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 52s 42ms/step - accuracy: 0.8715 - loss: 0.4999 - val_accuracy: 0.9077 - val_loss: 0.3556\n\nEpoch 2/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 29s 30ms/step - accuracy: 0.9841 - loss: 0.0710 - val_accuracy: 0.8811 - val_loss: 0.4172\n\nEpoch 3/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 30s 30ms/step - accuracy: 0.9895 - loss: 0.0422 - val_accuracy: 0.9204 - val_loss: 0.2693\n\nEpoch 4/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 30s 31ms/step - accuracy: 0.9909 - loss: 0.0334 - val_accuracy: 0.8582 - val_loss: 0.5310\n\nEpoch 5/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 31s 31ms/step - accuracy: 0.9916 - loss: 0.0290 - val_accuracy: 0.8764 - val_loss: 0.5278\n\nEpoch 6/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 32ms/step - accuracy: 0.9947 - loss: 0.0192 - val_accuracy: 0.9007 - val_loss: 0.3469\n\nEpoch 7/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 34s 34ms/step - accuracy: 0.9940 - loss: 0.0203 - val_accuracy: 0.9524 - val_loss: 0.1718\n\nEpoch 8/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 33ms/step - accuracy: 0.9962 - loss: 0.0132 - val_accuracy: 0.9421 - val_loss: 0.1961\n\nEpoch 9/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 33s 33ms/step - accuracy: 0.9950 - loss: 0.0165 - val_accuracy: 0.9569 - val_loss: 0.1548\n\nEpoch 10/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 33ms/step - accuracy: 0.9960 - loss: 0.0130 - val_accuracy: 0.8869 - val_loss: 0.4993\n\nEpoch 11/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 33ms/step - accuracy: 0.9946 - loss: 0.0162 - val_accuracy: 0.8870 - val_loss: 0.4758\n\nEpoch 12/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 33s 33ms/step - accuracy: 0.9975 - loss: 0.0080 - val_accuracy: 0.9509 - val_loss: 0.1730\n\nEpoch 13/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 33s 34ms/step - accuracy: 0.9970 - loss: 0.0093 - val_accuracy: 0.9610 - val_loss: 0.1615\n\nEpoch 14/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 33ms/step - accuracy: 0.9968 - loss: 0.0099 - val_accuracy: 0.7838 - val_loss: 1.1026\n\nEpoch 15/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 41s 33ms/step - accuracy: 0.9972 - loss: 0.0088 - val_accuracy: 0.9545 - val_loss: 0.1821\n\n\n\n\n\n# ==========================================\n# 5. Sanity Check against Mini Holdout\n# ==========================================\ntest_dir = '/content/'\ntest_datagen = ImageDataGenerator(rescale=1./255)\n\ntest_generator = test_datagen.flow_from_directory(\n    test_dir,\n    classes=['mini_holdout'],\n    target_size=image_size,\n    class_mode='sparse',\n    shuffle=False\n)\n\nprobabilities = model.predict(test_generator)\npredictions = [np.argmax(probas) for probas in probabilities]\n\n# Print out your first 10 predictions to verify formatting\nprint(\"First 10 predictions:\", predictions[:10])\n\n\nFound 201 images belonging to 1 classes.\n\n7/7 ━━━━━━━━━━━━━━━━━━━━ 3s 216ms/step\n\nFirst 10 predictions: [np.int64(16), np.int64(1), np.int64(38), np.int64(33), np.int64(11), np.int64(38), np.int64(18), np.int64(12), np.int64(25), np.int64(35)]\n\n\n\n\n\n# ==========================================\n# 6. Format to Apple's MLKit Framework (Extension Fix)\n# ==========================================\nprint(\"\\nConverting model format for Apple MLKit...\")\n\nimport tensorflow as tf\nimport coremltools as ct\n\n# 1. Export the live model to a standard low-level SavedModel folder\ntf.saved_model.save(model, \"saved_model_dir\")\n\n# 2. Convert by passing the directory path directly\nmlmodel = ct.convert(\n    \"saved_model_dir\",\n    source=\"tensorflow\",\n    inputs=[ct.ImageType(shape=(1, 100, 100, 3), scale=1.0/255.0)]\n)\n\n# 3. FIXED: Changed extension from .mlmodel to .mlpackage\nmlmodel.save(\"TrafficSignClassifier.mlpackage\")\nprint(\"Successfully generated 'TrafficSignClassifier.mlpackage' in your sidebar files!\")\n\n\nConverting model format for Apple MLKit...\n\n\nWARNING:coremltools:When both 'convert_to' and 'minimum_deployment_target' not specified, 'convert_to' is set to \"mlprogram\" and 'minimum_deployment_target' is set to ct.target.iOS15 (which is same as ct.target.macOS12). Note: the model will not run on systems older than iOS15/macOS12/watchOS8/tvOS15. In order to make your model run on older system, please set the 'minimum_deployment_target' to iOS14/iOS13. Details please see the link: https://apple.github.io/coremltools/docs-guides/source/target-conversion-formats.html\nRunning TensorFlow Graph Passes: 100%|██████████| 6/6 [00:00&lt;00:00,  7.70 passes/s]\nConverting TF Frontend ==&gt; MIL Ops: 100%|██████████| 54/54 [00:00&lt;00:00, 2264.77 ops/s]\nRunning MIL frontend_tensorflow2 pipeline: 100%|██████████| 7/7 [00:00&lt;00:00, 790.57 passes/s]\nRunning MIL default pipeline: 100%|██████████| 95/95 [00:00&lt;00:00, 133.91 passes/s]\nRunning MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00&lt;00:00, 276.41 passes/s]\n\n\nSuccessfully generated 'TrafficSignClassifier.mlpackage' in your sidebar files!\n\n\nOnce you have built and trained your model, the next step is to run the mini holdout images through it and see how well your model does at making predictions for images it has never seen before.\nSince loading these images and formatting them for the model can be tricky, you may find the following code useful. This code only uses your model to predict the class label for a given image. You’ll still need to compare those predictions to the “ground truth” class labels in mini_holdout_answers.csv to evaluate how well the model does.\nPreviously, you were given a file that would check your results. This time you’re given the answers to the first mini holdout dataset. You’ll need to compare those predictions against the “ground truth” class labels in mini_holdout_answers.csv to evaluate how well the model does.\nMake sure to use the insights gained from the mini hold out dataset in your executive summary.\nfrom tensorflow.keras.preprocessing import image_dataset_from_directory\ntest_dir = '/content/'\n\ntest_datagen = ImageDataGenerator(rescale=1./255)\ntest_generator = test_datagen.flow_from_directory(\n        test_dir,\n        classes=['mini_holdout'],\n        target_size=image_size,\n        class_mode='sparse',\n        shuffle=False)\nprobabilities = model.predict(test_generator)\npredictions = [np.argmax(probas) for probas in probabilities]\n\n# ==========================================\n# 7. Evaluate Performance Against Ground Truth\n# ==========================================\nfrom sklearn.metrics import classification_report, accuracy_score\n\n# 1. Load the ground truth answers from the csv\nanswers_df = pd.read_csv('/content/mini_holdout_answers.csv')\n\n# Extract the true class labels column (assuming the column name is 'ClassId')\n# If your CSV uses a different column header name like 'Class', change 'ClassId' below\ny_true = answers_df['ClassId'].values\ny_pred = predictions\n\n# 2. Calculate global accuracy\ntotal_accuracy = accuracy_score(y_true, y_pred)\nprint(f\"Overall Mini Holdout Accuracy: {total_accuracy * 100:.2f}%\\n\")\n\n# 3. Generate the class-by-class evaluation breakdown\n# This will show you exactly which signs your model nailed and where it struggled\nprint(\"Detailed Classification Report:\")\nprint(classification_report(y_true, y_pred, digits=4))\n\nOverall Mini Holdout Accuracy: 95.52%\n\nDetailed Classification Report:\n              precision    recall  f1-score   support\n\n           1     1.0000    1.0000    1.0000        11\n           2     1.0000    1.0000    1.0000         8\n           3     1.0000    0.9000    0.9474        10\n           4     1.0000    1.0000    1.0000         9\n           5     0.8333    1.0000    0.9091         5\n           6     1.0000    1.0000    1.0000         3\n           7     1.0000    0.8750    0.9333         8\n           8     0.8333    0.8333    0.8333         6\n           9     0.9091    1.0000    0.9524        10\n          10     1.0000    1.0000    1.0000        12\n          11     1.0000    1.0000    1.0000         8\n          12     1.0000    1.0000    1.0000         7\n          13     1.0000    1.0000    1.0000        10\n          14     1.0000    1.0000    1.0000         4\n          15     1.0000    1.0000    1.0000         2\n          16     1.0000    1.0000    1.0000         5\n          17     1.0000    1.0000    1.0000         7\n          18     0.8889    1.0000    0.9412         8\n          20     1.0000    1.0000    1.0000         2\n          21     1.0000    1.0000    1.0000         3\n          22     1.0000    1.0000    1.0000         1\n          23     1.0000    1.0000    1.0000         2\n          24     1.0000    1.0000    1.0000         2\n          25     1.0000    0.9286    0.9630        14\n          26     1.0000    1.0000    1.0000         3\n          27     1.0000    1.0000    1.0000         2\n          28     0.6667    1.0000    0.8000         2\n          29     1.0000    0.6667    0.8000         3\n          30     1.0000    0.5000    0.6667         4\n          31     0.3333    1.0000    0.5000         1\n          32     1.0000    1.0000    1.0000         1\n          33     1.0000    1.0000    1.0000         7\n          34     1.0000    0.5000    0.6667         2\n          35     1.0000    1.0000    1.0000         4\n          36     1.0000    1.0000    1.0000         2\n          38     0.9000    1.0000    0.9474         9\n          39     0.0000    0.0000    0.0000         0\n          40     1.0000    1.0000    1.0000         2\n          41     1.0000    0.5000    0.6667         2\n\n    accuracy                         0.9552       201\n   macro avg     0.9324    0.9155    0.9109       201\nweighted avg     0.9708    0.9552    0.9571       201\n\n\n\n/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n\n\n##Mini Hold out Dataset\nOnce you feel confident, you will need to predict for the full holdout dataset using the following code, and submit your csv file:\nfrom tensorflow.keras.preprocessing import image_dataset_from_directory\ntest_dir = '/content/'\n\ntest_datagen = ImageDataGenerator(rescale=1./255)\ntest_generator = test_datagen.flow_from_directory(\n        test_dir,\n        classes=['holdout'],\n        target_size=image_size,\n        class_mode='sparse',\n        shuffle=False)\nprobabilities = model.predict(test_generator)\npredictions = [np.argmax(probas) for probas in probabilities]\n\n# ==========================================\n# 8. Generate Full Holdout Predictions\n# ==========================================\nimport os\nimport pandas as pd\nimport numpy as np\nfrom tensorflow.keras.preprocessing.image import ImageDataGenerator\n\n# 1. Setup the generator for the full holdout folder\ntest_dir = '/content/'\nimage_size = (100, 100) # Matching your trained model size\n\nfull_holdout_datagen = ImageDataGenerator(rescale=1./255)\n\nfull_holdout_generator = full_holdout_datagen.flow_from_directory(\n    test_dir,\n    classes=['holdout'],      # Target the full holdout directory\n    target_size=image_size,\n    class_mode='sparse',\n    shuffle=False             # DO NOT SHUFFLE so predictions line up with filenames\n)\n\n# 2. Predict probabilities and extract class indices\nprint(\"Predicting on full holdout dataset...\")\nprobabilities = model.predict(full_holdout_generator)\npredictions = [np.argmax(probas) for probas in probabilities]\n\n# 3. Extract the clean filenames (e.g., \"00000.ppm\")\nfilenames = [os.path.basename(f) for f in full_holdout_generator.filenames]\n\n# 4. Create the final submission DataFrame matching course requirements\nsubmission_df = pd.DataFrame({\n    'Filename': filenames,\n    'ClassId': predictions\n})\n\n# Save to a CSV file in your Colab sidebar\nsubmission_df.to_csv('holdout_predictions.csv', index=False)\nprint(\"Successfully generated 'holdout_predictions.csv'!\")\n\n\nFound 12630 images belonging to 1 classes.\n\nPredicting on full holdout dataset...\n\n395/395 ━━━━━━━━━━━━━━━━━━━━ 18s 46ms/step\n\nSuccessfully generated 'holdout_predictions.csv'!\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "notebooks/TaiwanPandemicPrediction.html",
+    "href": "notebooks/TaiwanPandemicPrediction.html",
+    "title": "Your_Name - Data Science Portfolio",
+    "section": "",
+    "text": "# Note: After you run this cell, the training and test data will be available in\n# the file browser. (Click the folder icon on the left to view it)\n#\n# If you don't see the data after the cell completes, click the refresh button\n# in the file browser (folder icon with circular arrow)\n\n# First, let's download and unzip the data\n!echo \"Downloading files...\"\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/training1.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/training2.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/holdout.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/mini_holdout.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/mini_holdout_answers.csv\n\n!echo \"Unzipping files...\"\n!unzip -q /content/training1.zip\n!unzip -q /content/training2.zip\n!unzip -q /content/holdout.zip\n!unzip -q /content/mini_holdout.zip\n\n# Combine the two traning directories\n!echo \"Merging training data...\"\n!mkdir /content/training\n!mv /content/training1/* /content/training\n!mv /content/training2/* /content/training\n\n# Cleanup\n!echo \"Cleaning up...\"\n!rmdir /content/training1\n!rmdir /content/training2\n!rm training1.zip\n!rm training2.zip\n!rm holdout.zip\n!rm mini_holdout.zip\n\n!echo \"Data ready.\"\n\n\n# Import libraries\nimport pandas as pd\nimport tensorflow as tf\nfrom tensorflow import keras\nfrom tensorflow.keras.preprocessing.image import ImageDataGenerator\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n\n# We're using keras' ImageDataGenerator class to load our image data.\n# See (https://keras.io/api/preprocessing/image/#imagedatagenerator-class) for details\n#\n# A couple of things to note:\n# 1. We're specifying a number for the seed, so we'll always get the same shuffle and split of our images.\n# 2. Class names are inferred automatically from the image subdirectory names.\n# 3. We're splitting the training data into 80% training, 20% validation.\n\n\ntraining_dir = '/content/training/'\nimage_size = (100, 100)\n\n# Split up the training data images into training and validations sets\n# We'll use and ImageDataGenerator to do the splits\n# ImageDataGenerator can also be used to do preprocessing and agumentation on the files as can be seen with rescale\n\ntrain_datagen = ImageDataGenerator(\n        rescale=1./255,\n        validation_split=.2\n        )\nvalidation_datagen = ImageDataGenerator(\n        rescale=1./255,\n        validation_split=.2\n        )\n\ntrain_generator = train_datagen.flow_from_directory(\n        training_dir,\n        target_size = image_size,\n        subset=\"training\",\n        batch_size=32,\n        class_mode='sparse',\n        seed=42,shuffle=True)\nvalidation_generator = validation_datagen.flow_from_directory(\n        training_dir,\n        target_size=image_size,\n        batch_size=32,\n        class_mode='sparse',\n        subset=\"validation\",\n        seed=42)\n\n\n\n#these might come in handy\ntarget_names = ['Speed_20', 'Speed_30', 'Speed_50', 'Speed_60', 'Speed_70',\n               'Speed_80','Speed_Limit_Ends', 'Speed_100', 'Speed_120', 'Overtaking_Prohibited',\n               'Overtakeing_Prohibited_Trucks', 'Priority', 'Priority_Road_Ahead', 'Yield', 'STOP',\n               'Entry_Forbidden', 'Trucks_Forbidden', 'No_Entry(one-way traffic)', 'General Danger(!)', 'Left_Curve_Ahead',\n               'Right_Curve_Ahead', 'Double_Curve', 'Poor_Surface_Ahead', 'Slippery_Surface_Ahead', 'Road_Narrows_On_Right',\n               'Roadwork_Ahead', 'Traffic_Light_Ahead', 'Warning_Pedestrians', 'Warning_Children', 'Warning_Bikes',\n               'Ice_Snow', 'Deer_Crossing', 'End_Previous_Limitation', 'Turning_Right_Compulsory', 'Turning_Left_Compulsory',\n               'Ahead_Only', 'Straight_Or_Right_Mandatory', 'Straight_Or_Left_Mandatory', 'Passing_Right_Compulsory', 'Passing_Left_Compulsory',\n               'Roundabout', 'End_Overtaking_Prohibition', 'End_Overtaking_Prohibition_Trucks']\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project2.html",
+    "href": "Cleansing_Exploration/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project5.html",
+    "href": "Cleansing_Exploration/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project4.html",
+    "href": "Cleansing_Exploration/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Competition/project1.html",
+    "href": "Competition/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Competition/project3.html",
+    "href": "Competition/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Case01_high_and_low_Econ_models.html",
+    "href": "Case01_high_and_low_Econ_models.html",
+    "title": "Your_Name - Data Science Portfolio",
+    "section": "",
+    "text": "import polars as pl\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.metrics import accuracy_score, precision_score, recall_score\n\n# ==========================================\n# 1. LOAD AND PREPROCESS DATA\n# ==========================================\ndata_url = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank.csv\"\n\nprint(\"🔄 Loading banking dataset...\")\ndf = pl.read_csv(data_url, infer_schema_length=None)\n\n# Task 4 Focus: Use median to split economic environments\nmedian_confidence = df[\"cons.conf.idx\"].median()\n\nhigh_confidence_df = df.filter(pl.col(\"cons.conf.idx\") &gt;= median_confidence)\nlow_confidence_df = df.filter(pl.col(\"cons.conf.idx\") &lt; median_confidence)\n\ndef prepare_model_data(data_frame: pl.DataFrame, target_column: str = \"y\"):\n    \"\"\"Maps target label to binary integers and applies one-hot encoding natively in Polars.\"\"\"\n    target = data_frame.select(\n        pl.col(target_column).map_elements(lambda val: 1 if val == \"yes\" else 0, return_dtype=pl.Int8)\n    )\n    features_df = data_frame.drop(target_column)\n    categorical_cols = [col for col in features_df.columns if features_df[col].dtype == pl.String]\n    features_encoded = features_df.to_dummies(columns=categorical_cols)\n\n    return features_encoded, target\n\nX_high, y_high = prepare_model_data(high_confidence_df)\nX_low, y_low = prepare_model_data(low_confidence_df)\n\n# ==========================================\n# 2. CREATE BALANCED TRAIN/TEST SPLITS\n# ==========================================\nX_train_high, X_test_high, y_train_high, y_test_high = train_test_split(\n    X_high.to_pandas(),\n    y_high.to_pandas().to_numpy().ravel(),\n    test_size=0.20,\n    random_state=42,\n    stratify=y_high.to_pandas()\n)\n\nX_train_low, X_test_low, y_train_low, y_test_low = train_test_split(\n    X_low.to_pandas(),\n    y_low.to_pandas().to_numpy().ravel(),\n    test_size=0.20,\n    random_state=42,\n    stratify=y_low.to_pandas()\n)\n\n# ==========================================\n# 3. ROBUST PIPELINE EVALUATION FUNCTION\n# ==========================================\ndef evaluate_and_summarize(model, X_train, X_test, y_train, y_test, model_name: str, baseline_counts=None):\n    \"\"\"Trains model, calculates metrics, and extracts top driving data attributes.\"\"\"\n    # Fit the machine learning model\n    model.fit(X_train, y_train)\n    y_pred = model.predict(X_test)\n\n    # Calculate operational metrics\n    accuracy = accuracy_score(y_test, y_pred)\n    precision = precision_score(y_test, y_pred, zero_division=0)\n    recall = recall_score(y_test, y_pred, zero_division=0)\n\n    # Format and display executive report block\n    print(\"\\n\" + \"=\"*50)\n    print(f\" 📑 EXECUTIVE SUMMARY FOR: {model_name.upper()}\")\n    print(\"=\"*50)\n\n    if baseline_counts is not None:\n        print(f\"📊 Dataset Baseline Counts:\\n{baseline_counts}\\n---\")\n\n    print(f\"Performance Scores:\")\n    print(f\"  • Accuracy:  {accuracy:.2f}\")\n    print(f\"  • Precision: {precision:.2f}\")\n    print(f\"  • Recall:    {recall:.2f}\")\n    print(\"---\")\n\n    # Feature Importance analysis extraction\n    if hasattr(model, 'feature_importances_'):\n        importances = model.feature_importances_\n        feature_names = X_train.columns\n\n        # Sort features based on how much they impact prediction accuracy\n        importance_df = pd.DataFrame({'Attribute': feature_names, 'Impact_Score': importances})\n        top_5 = importance_df.sort_values(by='Impact_Score', ascending=False).head(5)\n\n        print(\"💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\")\n        for idx, row in top_5.iterrows():\n            print(f\"  [{row['Impact_Score']:.4f}] ➔ {row['Attribute']}\")\n    else:\n        print(\"❌ Feature importances unavailable for this classifier profile.\")\n    print(\"=\"*50)\n\n# ==========================================\n# 4. RUN EXECUTIVES MODELS AND SUMMARIES\n# ==========================================\n# High Confidence Metrics & Importance\nhigh_baseline = y_high.group_by(\"y\").count()\nrf_high = RandomForestClassifier(max_depth=5, random_state=42, n_estimators=100)\nevaluate_and_summarize(rf_high, X_train_high, X_test_high, y_train_high, y_test_high, \"Random Forest (High Econ Scenario)\", high_baseline)\n\ndt_high = DecisionTreeClassifier(max_depth=5, random_state=42)\nevaluate_and_summarize(dt_high, X_train_high, X_test_high, y_train_high, y_test_high, \"Decision Tree (High Econ Scenario)\")\n\n# Low Confidence Metrics & Importance\nlow_baseline = y_low.group_by(\"y\").count()\nrf_low = RandomForestClassifier(max_depth=5, random_state=42, n_estimators=100)\nevaluate_and_summarize(rf_low, X_train_low, X_test_low, y_train_low, y_test_low, \"Random Forest (Low Econ Scenario)\", low_baseline)\n\ndt_low = DecisionTreeClassifier(max_depth=5, random_state=42)\nevaluate_and_summarize(dt_low, X_train_low, X_test_low, y_train_low, y_test_low, \"Decision Tree (Low Econ Scenario)\")\n\n🔄 Loading banking dataset...\n\n\n/tmp/ipykernel_24714/410228936.py:103: DeprecationWarning: `GroupBy.count` was renamed; use `GroupBy.len` instead\n  high_baseline = y_high.group_by(\"y\").count()\n\n\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: RANDOM FOREST (HIGH ECON SCENARIO)\n==================================================\n📊 Dataset Baseline Counts:\nshape: (2, 2)\n┌─────┬───────┐\n│ y   ┆ count │\n│ --- ┆ ---   │\n│ i8  ┆ u32   │\n╞═════╪═══════╡\n│ 0   ┆ 17337 │\n│ 1   ┆ 2529  │\n└─────┴───────┘\n---\nPerformance Scores:\n  • Accuracy:  0.90\n  • Precision: 0.71\n  • Recall:    0.31\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.2205] ➔ emp.var.rate\n  [0.1432] ➔ nr.employed\n  [0.1217] ➔ euribor3m\n  [0.0792] ➔ pdays\n  [0.0714] ➔ poutcome_success\n==================================================\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: DECISION TREE (HIGH ECON SCENARIO)\n==================================================\nPerformance Scores:\n  • Accuracy:  0.89\n  • Precision: 0.59\n  • Recall:    0.41\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.7912] ➔ emp.var.rate\n  [0.1244] ➔ pdays\n  [0.0182] ➔ euribor3m\n  [0.0140] ➔ day_of_week_mon\n  [0.0104] ➔ nr.employed\n==================================================\n\n\n/tmp/ipykernel_24714/410228936.py:111: DeprecationWarning: `GroupBy.count` was renamed; use `GroupBy.len` instead\n  low_baseline = y_low.group_by(\"y\").count()\n\n\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: RANDOM FOREST (LOW ECON SCENARIO)\n==================================================\n📊 Dataset Baseline Counts:\nshape: (2, 2)\n┌─────┬───────┐\n│ y   ┆ count │\n│ --- ┆ ---   │\n│ i8  ┆ u32   │\n╞═════╪═══════╡\n│ 0   ┆ 15524 │\n│ 1   ┆ 1679  │\n└─────┴───────┘\n---\nPerformance Scores:\n  • Accuracy:  0.91\n  • Precision: 0.69\n  • Recall:    0.05\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.1998] ➔ cons.conf.idx\n  [0.1179] ➔ euribor3m\n  [0.0863] ➔ pdays\n  [0.0822] ➔ cons.price.idx\n  [0.0656] ➔ poutcome_success\n==================================================\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: DECISION TREE (LOW ECON SCENARIO)\n==================================================\nPerformance Scores:\n  • Accuracy:  0.91\n  • Precision: 0.69\n  • Recall:    0.10\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.4968] ➔ cons.conf.idx\n  [0.1551] ➔ euribor3m\n  [0.0805] ➔ pdays\n  [0.0691] ➔ age\n  [0.0435] ➔ job_retired\n==================================================\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Full_Stack/project1.html",
+    "href": "Full_Stack/project1.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Full Stack",
-      "Project 2"
+      "Project 1"
     ]
   },
   {
@@ -157,128 +254,25 @@
     ]
   },
   {
-    "objectID": "story_telling.html",
-    "href": "story_telling.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Story Telling"
-    ]
-  },
-  {
-    "objectID": "story_telling.html#title-2-header",
-    "href": "story_telling.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Story Telling"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html",
-    "href": "Machine_Learning/project1.html",
+    "objectID": "Full_Stack/project5.html",
+    "href": "Full_Stack/project5.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Machine Learning",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project5.html",
-    "href": "Machine_Learning/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
+      "Full Stack",
       "Project 5"
     ]
   },
   {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
-  },
-  {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Exploration/project1.html",
-    "href": "Cleansing_Exploration/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Cleansing_Exploration/project5.html",
-    "href": "Cleansing_Exploration/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Case01_high_and_low_Econ_models.html",
-    "href": "Case01_high_and_low_Econ_models.html",
-    "title": "Your_Name - Data Science Portfolio",
-    "section": "",
-    "text": "import polars as pl\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.metrics import accuracy_score, precision_score, recall_score\n\n# ==========================================\n# 1. LOAD AND PREPROCESS DATA\n# ==========================================\ndata_url = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/bank.csv\"\n\nprint(\"🔄 Loading banking dataset...\")\ndf = pl.read_csv(data_url, infer_schema_length=None)\n\n# Task 4 Focus: Use median to split economic environments\nmedian_confidence = df[\"cons.conf.idx\"].median()\n\nhigh_confidence_df = df.filter(pl.col(\"cons.conf.idx\") &gt;= median_confidence)\nlow_confidence_df = df.filter(pl.col(\"cons.conf.idx\") &lt; median_confidence)\n\ndef prepare_model_data(data_frame: pl.DataFrame, target_column: str = \"y\"):\n    \"\"\"Maps target label to binary integers and applies one-hot encoding natively in Polars.\"\"\"\n    target = data_frame.select(\n        pl.col(target_column).map_elements(lambda val: 1 if val == \"yes\" else 0, return_dtype=pl.Int8)\n    )\n    features_df = data_frame.drop(target_column)\n    categorical_cols = [col for col in features_df.columns if features_df[col].dtype == pl.String]\n    features_encoded = features_df.to_dummies(columns=categorical_cols)\n\n    return features_encoded, target\n\nX_high, y_high = prepare_model_data(high_confidence_df)\nX_low, y_low = prepare_model_data(low_confidence_df)\n\n# ==========================================\n# 2. CREATE BALANCED TRAIN/TEST SPLITS\n# ==========================================\nX_train_high, X_test_high, y_train_high, y_test_high = train_test_split(\n    X_high.to_pandas(),\n    y_high.to_pandas().to_numpy().ravel(),\n    test_size=0.20,\n    random_state=42,\n    stratify=y_high.to_pandas()\n)\n\nX_train_low, X_test_low, y_train_low, y_test_low = train_test_split(\n    X_low.to_pandas(),\n    y_low.to_pandas().to_numpy().ravel(),\n    test_size=0.20,\n    random_state=42,\n    stratify=y_low.to_pandas()\n)\n\n# ==========================================\n# 3. ROBUST PIPELINE EVALUATION FUNCTION\n# ==========================================\ndef evaluate_and_summarize(model, X_train, X_test, y_train, y_test, model_name: str, baseline_counts=None):\n    \"\"\"Trains model, calculates metrics, and extracts top driving data attributes.\"\"\"\n    # Fit the machine learning model\n    model.fit(X_train, y_train)\n    y_pred = model.predict(X_test)\n\n    # Calculate operational metrics\n    accuracy = accuracy_score(y_test, y_pred)\n    precision = precision_score(y_test, y_pred, zero_division=0)\n    recall = recall_score(y_test, y_pred, zero_division=0)\n\n    # Format and display executive report block\n    print(\"\\n\" + \"=\"*50)\n    print(f\" 📑 EXECUTIVE SUMMARY FOR: {model_name.upper()}\")\n    print(\"=\"*50)\n\n    if baseline_counts is not None:\n        print(f\"📊 Dataset Baseline Counts:\\n{baseline_counts}\\n---\")\n\n    print(f\"Performance Scores:\")\n    print(f\"  • Accuracy:  {accuracy:.2f}\")\n    print(f\"  • Precision: {precision:.2f}\")\n    print(f\"  • Recall:    {recall:.2f}\")\n    print(\"---\")\n\n    # Feature Importance analysis extraction\n    if hasattr(model, 'feature_importances_'):\n        importances = model.feature_importances_\n        feature_names = X_train.columns\n\n        # Sort features based on how much they impact prediction accuracy\n        importance_df = pd.DataFrame({'Attribute': feature_names, 'Impact_Score': importances})\n        top_5 = importance_df.sort_values(by='Impact_Score', ascending=False).head(5)\n\n        print(\"💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\")\n        for idx, row in top_5.iterrows():\n            print(f\"  [{row['Impact_Score']:.4f}] ➔ {row['Attribute']}\")\n    else:\n        print(\"❌ Feature importances unavailable for this classifier profile.\")\n    print(\"=\"*50)\n\n# ==========================================\n# 4. RUN EXECUTIVES MODELS AND SUMMARIES\n# ==========================================\n# High Confidence Metrics & Importance\nhigh_baseline = y_high.group_by(\"y\").count()\nrf_high = RandomForestClassifier(max_depth=5, random_state=42, n_estimators=100)\nevaluate_and_summarize(rf_high, X_train_high, X_test_high, y_train_high, y_test_high, \"Random Forest (High Econ Scenario)\", high_baseline)\n\ndt_high = DecisionTreeClassifier(max_depth=5, random_state=42)\nevaluate_and_summarize(dt_high, X_train_high, X_test_high, y_train_high, y_test_high, \"Decision Tree (High Econ Scenario)\")\n\n# Low Confidence Metrics & Importance\nlow_baseline = y_low.group_by(\"y\").count()\nrf_low = RandomForestClassifier(max_depth=5, random_state=42, n_estimators=100)\nevaluate_and_summarize(rf_low, X_train_low, X_test_low, y_train_low, y_test_low, \"Random Forest (Low Econ Scenario)\", low_baseline)\n\ndt_low = DecisionTreeClassifier(max_depth=5, random_state=42)\nevaluate_and_summarize(dt_low, X_train_low, X_test_low, y_train_low, y_test_low, \"Decision Tree (Low Econ Scenario)\")\n\n🔄 Loading banking dataset...\n\n\n/tmp/ipykernel_24714/410228936.py:103: DeprecationWarning: `GroupBy.count` was renamed; use `GroupBy.len` instead\n  high_baseline = y_high.group_by(\"y\").count()\n\n\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: RANDOM FOREST (HIGH ECON SCENARIO)\n==================================================\n📊 Dataset Baseline Counts:\nshape: (2, 2)\n┌─────┬───────┐\n│ y   ┆ count │\n│ --- ┆ ---   │\n│ i8  ┆ u32   │\n╞═════╪═══════╡\n│ 0   ┆ 17337 │\n│ 1   ┆ 2529  │\n└─────┴───────┘\n---\nPerformance Scores:\n  • Accuracy:  0.90\n  • Precision: 0.71\n  • Recall:    0.31\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.2205] ➔ emp.var.rate\n  [0.1432] ➔ nr.employed\n  [0.1217] ➔ euribor3m\n  [0.0792] ➔ pdays\n  [0.0714] ➔ poutcome_success\n==================================================\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: DECISION TREE (HIGH ECON SCENARIO)\n==================================================\nPerformance Scores:\n  • Accuracy:  0.89\n  • Precision: 0.59\n  • Recall:    0.41\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.7912] ➔ emp.var.rate\n  [0.1244] ➔ pdays\n  [0.0182] ➔ euribor3m\n  [0.0140] ➔ day_of_week_mon\n  [0.0104] ➔ nr.employed\n==================================================\n\n\n/tmp/ipykernel_24714/410228936.py:111: DeprecationWarning: `GroupBy.count` was renamed; use `GroupBy.len` instead\n  low_baseline = y_low.group_by(\"y\").count()\n\n\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: RANDOM FOREST (LOW ECON SCENARIO)\n==================================================\n📊 Dataset Baseline Counts:\nshape: (2, 2)\n┌─────┬───────┐\n│ y   ┆ count │\n│ --- ┆ ---   │\n│ i8  ┆ u32   │\n╞═════╪═══════╡\n│ 0   ┆ 15524 │\n│ 1   ┆ 1679  │\n└─────┴───────┘\n---\nPerformance Scores:\n  • Accuracy:  0.91\n  • Precision: 0.69\n  • Recall:    0.05\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.1998] ➔ cons.conf.idx\n  [0.1179] ➔ euribor3m\n  [0.0863] ➔ pdays\n  [0.0822] ➔ cons.price.idx\n  [0.0656] ➔ poutcome_success\n==================================================\n\n==================================================\n 📑 EXECUTIVE SUMMARY FOR: DECISION TREE (LOW ECON SCENARIO)\n==================================================\nPerformance Scores:\n  • Accuracy:  0.91\n  • Precision: 0.69\n  • Recall:    0.10\n---\n💡 Top 5 Most Impactful Attributes Driving Customer Subscriptions:\n  [0.4968] ➔ cons.conf.idx\n  [0.1551] ➔ euribor3m\n  [0.0805] ➔ pdays\n  [0.0691] ➔ age\n  [0.0435] ➔ job_retired\n==================================================\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Competition/project1.html",
-    "href": "Competition/project1.html",
+    "objectID": "Full_Stack/project2.html",
+    "href": "Full_Stack/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Competition",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Competition/project5.html",
-    "href": "Competition/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "ml.html",
-    "href": "ml.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Machine Learning"
-    ]
-  },
-  {
-    "objectID": "ml.html#title-2-header",
-    "href": "ml.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Machine Learning"
+      "Full Stack",
+      "Project 2"
     ]
   },
   {
@@ -293,14 +287,14 @@
     ]
   },
   {
-    "objectID": "Competition/project3.html",
-    "href": "Competition/project3.html",
+    "objectID": "Competition/project5.html",
+    "href": "Competition/project5.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Competition",
-      "Project 3"
+      "Project 5"
     ]
   },
   {
@@ -315,13 +309,6 @@
     ]
   },
   {
-    "objectID": "Cleansing_Exploration/project4.html",
-    "href": "Cleansing_Exploration/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "Cleansing_Exploration/project3.html",
     "href": "Cleansing_Exploration/project3.html",
     "title": "Client Report - [Insert Project Title]",
@@ -329,168 +316,11 @@
     "text": "Paste in a template\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Cleansing_Exploration/project2.html",
-    "href": "Cleansing_Exploration/project2.html",
+    "objectID": "Cleansing_Exploration/project1.html",
+    "href": "Cleansing_Exploration/project1.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Machine_Learning/project4.html",
-    "href": "Machine_Learning/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project3.html",
-    "href": "Machine_Learning/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project2.html",
-    "href": "Machine_Learning/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Full Stack"
-    ]
-  },
-  {
-    "objectID": "full_stack.html#title-2-header",
-    "href": "full_stack.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Full Stack"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project5.html",
-    "href": "Full_Stack/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Full_Stack/project1.html",
-    "href": "Full_Stack/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Full Stack",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project4.html",
-    "href": "Story_Telling/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project3.html",
-    "href": "Story_Telling/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project2.html",
-    "href": "Story_Telling/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project5.html",
-    "href": "Cleansing_Projects/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project1.html",
-    "href": "Cleansing_Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Data Cleansing",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Competition"
-    ]
-  },
-  {
-    "objectID": "competition.html#title-2-header",
-    "href": "competition.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Competition"
-    ]
-  },
-  {
-    "objectID": "notebooks/starter_signs.html",
-    "href": "notebooks/starter_signs.html",
-    "title": "Testing the model",
-    "section": "",
-    "text": "# Note: After you run this cell, the training and test data will be available in\n# the file browser. (Click the folder icon on the left to view it)\n#\n# If you don't see the data after the cell completes, click the refresh button\n# in the file browser (folder icon with circular arrow)\n\n# First, let's download and unzip the data\n!echo \"Downloading files...\"\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/training1.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/training2.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/holdout.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/mini_holdout.zip\n!wget -q https://github.com/byui-cse/cse450-course/raw/master/data/roadsigns/mini_holdout_answers.csv\n\n!echo \"Unzipping files...\"\n!unzip -q /content/training1.zip\n!unzip -q /content/training2.zip\n!unzip -q /content/holdout.zip\n!unzip -q /content/mini_holdout.zip\n\n# Combine the two traning directories\n!echo \"Merging training data...\"\n!mkdir /content/training\n!mv /content/training1/* /content/training\n!mv /content/training2/* /content/training\n\n# Cleanup\n!echo \"Cleaning up...\"\n!rmdir /content/training1\n!rmdir /content/training2\n!rm training1.zip\n!rm training2.zip\n!rm holdout.zip\n!rm mini_holdout.zip\n\n!echo \"Data ready.\"\n\nDownloading files...\nUnzipping files...\nMerging training data...\nCleaning up...\nData ready.\n\n\n\n# ==========================================\n# 2. Imports & Preprocessing Generators\n# ==========================================\nimport os\nimport numpy as np\nimport pandas as pd\nimport tensorflow as tf\nfrom tensorflow import keras\nfrom tensorflow.keras.preprocessing.image import ImageDataGenerator\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization\n\n# Set image constraints\ntraining_dir = '/content/training/'\nimage_size = (48, 48)  # Upgraded from 100x100 to 48x48 for optimal mobile speed & detail\nbatch_size = 32\n\n# Training generator with safe spatial adjustments (No horizontal/vertical flips!)\ntrain_datagen = ImageDataGenerator(\n    rescale=1./255,\n    rotation_range=15,\n    width_shift_range=0.1,\n    height_shift_range=0.1,\n    brightness_range=[0.7, 1.3],\n    validation_split=0.2\n)\n\nvalidation_datagen = ImageDataGenerator(\n    rescale=1./255,\n    validation_split=0.2\n)\n\ntrain_generator = train_datagen.flow_from_directory(\n    training_dir,\n    target_size=image_size,\n    subset=\"training\",\n    batch_size=batch_size,\n    class_mode='sparse',\n    seed=42,\n    shuffle=True\n)\n\nvalidation_generator = validation_datagen.flow_from_directory(\n    training_dir,\n    target_size=image_size,\n    batch_size=batch_size,\n    class_mode='sparse',\n    subset=\"validation\",\n    seed=42,\n    shuffle=False\n)\n\nFound 31368 images belonging to 43 classes.\nFound 7841 images belonging to 43 classes.\n\n\n\nfrom google.colab import drive\ndrive.mount('/content/drive')\n\nMounted at /content/drive\n\n\n\n# We're using keras' ImageDataGenerator class to load our image data.\n# See (https://keras.io/api/preprocessing/image/#imagedatagenerator-class) for details\n#\n# A couple of things to note:\n# 1. We're specifying a number for the seed, so we'll always get the same shuffle and split of our images.\n# 2. Class names are inferred automatically from the image subdirectory names.\n# 3. We're splitting the training data into 80% training, 20% validation.\n\n\ntraining_dir = '/content/training/'\nimage_size = (100, 100)\n\n# Split up the training data images into training and validations sets\n# We'll use and ImageDataGenerator to do the splits\n# ImageDataGenerator can also be used to do preprocessing and agumentation on the files as can be seen with rescale\n\ntrain_datagen = ImageDataGenerator(\n        rescale=1./255,\n        validation_split=.2\n        )\nvalidation_datagen = ImageDataGenerator(\n        rescale=1./255,\n        validation_split=.2\n        )\n\ntrain_generator = train_datagen.flow_from_directory(\n        training_dir,\n        target_size = image_size,\n        subset=\"training\",\n        batch_size=32,\n        class_mode='sparse',\n        seed=42,shuffle=True)\nvalidation_generator = validation_datagen.flow_from_directory(\n        training_dir,\n        target_size=image_size,\n        batch_size=32,\n        class_mode='sparse',\n        subset=\"validation\",\n        seed=42)\n\n\nFound 31368 images belonging to 43 classes.\nFound 7841 images belonging to 43 classes.\n\n\n\n#these might come in handy\ntarget_names = ['Speed_20', 'Speed_30', 'Speed_50', 'Speed_60', 'Speed_70',\n               'Speed_80','Speed_Limit_Ends', 'Speed_100', 'Speed_120', 'Overtaking_Prohibited',\n               'Overtakeing_Prohibited_Trucks', 'Priority', 'Priority_Road_Ahead', 'Yield', 'STOP',\n               'Entry_Forbidden', 'Trucks_Forbidden', 'No_Entry(one-way traffic)', 'General Danger(!)', 'Left_Curve_Ahead',\n               'Right_Curve_Ahead', 'Double_Curve', 'Poor_Surface_Ahead', 'Slippery_Surface_Ahead', 'Road_Narrows_On_Right',\n               'Roadwork_Ahead', 'Traffic_Light_Ahead', 'Warning_Pedestrians', 'Warning_Children', 'Warning_Bikes',\n               'Ice_Snow', 'Deer_Crossing', 'End_Previous_Limitation', 'Turning_Right_Compulsory', 'Turning_Left_Compulsory',\n               'Ahead_Only', 'Straight_Or_Right_Mandatory', 'Straight_Or_Left_Mandatory', 'Passing_Right_Compulsory', 'Passing_Left_Compulsory',\n               'Roundabout', 'End_Overtaking_Prohibition', 'End_Overtaking_Prohibition_Trucks']\n\n\n# View 9 images and their class labels\nimport matplotlib.pyplot as plt\nplt.figure(figsize=(10, 10))\nimages, labels = next(train_generator)  # Assuming train_generator is a generator\nbatch_size = images.shape[0]\n\nfor i in range(min(9, batch_size)):\n    ax = plt.subplot(3, 3, i + 1)\n    plt.imshow((images[i] * 255).astype(\"uint8\"))\n    plt.title(int(labels[i]))\n    plt.axis(\"off\")\n\nplt.show()\n\n\n\n\n\n\n\n\n\n# ==========================================\n# 3. Build Custom CNN Architecture (Fixed for 100x100)\n# ==========================================\nnum_classes = len(train_generator.class_indices)\n\nmodel = Sequential([\n    # First Convolutional Layer Group - Updated input_shape to 100x100\n    Conv2D(32, (3, 3), activation='relu', padding='same', input_shape=(100, 100, 3)),\n    BatchNormalization(),\n    Conv2D(32, (3, 3), activation='relu'),\n    MaxPooling2D(pool_size=(2, 2)),\n    Dropout(0.2),\n\n    # Second Convolutional Layer Group\n    Conv2D(64, (3, 3), activation='relu', padding='same'),\n    BatchNormalization(),\n    Conv2D(64, (3, 3), activation='relu'),\n    MaxPooling2D(pool_size=(2, 2)),\n    Dropout(0.3),\n\n    # Classification Head\n    Flatten(),\n    Dense(256, activation='relu'),\n    BatchNormalization(),\n    Dropout(0.4),\n    Dense(num_classes, activation='softmax')\n])\n\nmodel.compile(\n    optimizer='adam',\n    loss='sparse_categorical_crossentropy',\n    metrics=['accuracy']\n)\n\nmodel.summary()\n\nModel: \"sequential_1\"\n\n\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓\n┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩\n│ conv2d_4 (Conv2D)               │ (None, 100, 100, 32)   │           896 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ batch_normalization_3           │ (None, 100, 100, 32)   │           128 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ conv2d_5 (Conv2D)               │ (None, 98, 98, 32)     │         9,248 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ max_pooling2d_2 (MaxPooling2D)  │ (None, 49, 49, 32)     │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dropout_3 (Dropout)             │ (None, 49, 49, 32)     │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ conv2d_6 (Conv2D)               │ (None, 49, 49, 64)     │        18,496 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ batch_normalization_4           │ (None, 49, 49, 64)     │           256 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ conv2d_7 (Conv2D)               │ (None, 47, 47, 64)     │        36,928 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ max_pooling2d_3 (MaxPooling2D)  │ (None, 23, 23, 64)     │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dropout_4 (Dropout)             │ (None, 23, 23, 64)     │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ flatten_1 (Flatten)             │ (None, 33856)          │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dense_2 (Dense)                 │ (None, 256)            │     8,667,392 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ batch_normalization_5           │ (None, 256)            │         1,024 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dropout_5 (Dropout)             │ (None, 256)            │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dense_3 (Dense)                 │ (None, 43)             │        11,051 │\n└─────────────────────────────────┴────────────────────────┴───────────────┘\n\n\n\n Total params: 8,745,419 (33.36 MB)\n\n\n\n Trainable params: 8,744,715 (33.36 MB)\n\n\n\n Non-trainable params: 704 (2.75 KB)\n\n\n\n\n# ==========================================\n# 4. Model Training\n# ==========================================\nprint(\"\\nStarting Model Training...\")\nhistory = model.fit(\n    train_generator,\n    validation_data=validation_generator,\n    epochs=15,\n    verbose=1\n)\n\n\nStarting Model Training...\n\nEpoch 1/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 52s 42ms/step - accuracy: 0.8715 - loss: 0.4999 - val_accuracy: 0.9077 - val_loss: 0.3556\n\nEpoch 2/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 29s 30ms/step - accuracy: 0.9841 - loss: 0.0710 - val_accuracy: 0.8811 - val_loss: 0.4172\n\nEpoch 3/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 30s 30ms/step - accuracy: 0.9895 - loss: 0.0422 - val_accuracy: 0.9204 - val_loss: 0.2693\n\nEpoch 4/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 30s 31ms/step - accuracy: 0.9909 - loss: 0.0334 - val_accuracy: 0.8582 - val_loss: 0.5310\n\nEpoch 5/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 31s 31ms/step - accuracy: 0.9916 - loss: 0.0290 - val_accuracy: 0.8764 - val_loss: 0.5278\n\nEpoch 6/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 32ms/step - accuracy: 0.9947 - loss: 0.0192 - val_accuracy: 0.9007 - val_loss: 0.3469\n\nEpoch 7/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 34s 34ms/step - accuracy: 0.9940 - loss: 0.0203 - val_accuracy: 0.9524 - val_loss: 0.1718\n\nEpoch 8/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 33ms/step - accuracy: 0.9962 - loss: 0.0132 - val_accuracy: 0.9421 - val_loss: 0.1961\n\nEpoch 9/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 33s 33ms/step - accuracy: 0.9950 - loss: 0.0165 - val_accuracy: 0.9569 - val_loss: 0.1548\n\nEpoch 10/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 33ms/step - accuracy: 0.9960 - loss: 0.0130 - val_accuracy: 0.8869 - val_loss: 0.4993\n\nEpoch 11/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 33ms/step - accuracy: 0.9946 - loss: 0.0162 - val_accuracy: 0.8870 - val_loss: 0.4758\n\nEpoch 12/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 33s 33ms/step - accuracy: 0.9975 - loss: 0.0080 - val_accuracy: 0.9509 - val_loss: 0.1730\n\nEpoch 13/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 33s 34ms/step - accuracy: 0.9970 - loss: 0.0093 - val_accuracy: 0.9610 - val_loss: 0.1615\n\nEpoch 14/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 32s 33ms/step - accuracy: 0.9968 - loss: 0.0099 - val_accuracy: 0.7838 - val_loss: 1.1026\n\nEpoch 15/15\n\n981/981 ━━━━━━━━━━━━━━━━━━━━ 41s 33ms/step - accuracy: 0.9972 - loss: 0.0088 - val_accuracy: 0.9545 - val_loss: 0.1821\n\n\n\n\n\n# ==========================================\n# 5. Sanity Check against Mini Holdout\n# ==========================================\ntest_dir = '/content/'\ntest_datagen = ImageDataGenerator(rescale=1./255)\n\ntest_generator = test_datagen.flow_from_directory(\n    test_dir,\n    classes=['mini_holdout'],\n    target_size=image_size,\n    class_mode='sparse',\n    shuffle=False\n)\n\nprobabilities = model.predict(test_generator)\npredictions = [np.argmax(probas) for probas in probabilities]\n\n# Print out your first 10 predictions to verify formatting\nprint(\"First 10 predictions:\", predictions[:10])\n\n\nFound 201 images belonging to 1 classes.\n\n7/7 ━━━━━━━━━━━━━━━━━━━━ 3s 216ms/step\n\nFirst 10 predictions: [np.int64(16), np.int64(1), np.int64(38), np.int64(33), np.int64(11), np.int64(38), np.int64(18), np.int64(12), np.int64(25), np.int64(35)]\n\n\n\n\n\n# ==========================================\n# 6. Format to Apple's MLKit Framework (Extension Fix)\n# ==========================================\nprint(\"\\nConverting model format for Apple MLKit...\")\n\nimport tensorflow as tf\nimport coremltools as ct\n\n# 1. Export the live model to a standard low-level SavedModel folder\ntf.saved_model.save(model, \"saved_model_dir\")\n\n# 2. Convert by passing the directory path directly\nmlmodel = ct.convert(\n    \"saved_model_dir\",\n    source=\"tensorflow\",\n    inputs=[ct.ImageType(shape=(1, 100, 100, 3), scale=1.0/255.0)]\n)\n\n# 3. FIXED: Changed extension from .mlmodel to .mlpackage\nmlmodel.save(\"TrafficSignClassifier.mlpackage\")\nprint(\"Successfully generated 'TrafficSignClassifier.mlpackage' in your sidebar files!\")\n\n\nConverting model format for Apple MLKit...\n\n\nWARNING:coremltools:When both 'convert_to' and 'minimum_deployment_target' not specified, 'convert_to' is set to \"mlprogram\" and 'minimum_deployment_target' is set to ct.target.iOS15 (which is same as ct.target.macOS12). Note: the model will not run on systems older than iOS15/macOS12/watchOS8/tvOS15. In order to make your model run on older system, please set the 'minimum_deployment_target' to iOS14/iOS13. Details please see the link: https://apple.github.io/coremltools/docs-guides/source/target-conversion-formats.html\nRunning TensorFlow Graph Passes: 100%|██████████| 6/6 [00:00&lt;00:00,  7.70 passes/s]\nConverting TF Frontend ==&gt; MIL Ops: 100%|██████████| 54/54 [00:00&lt;00:00, 2264.77 ops/s]\nRunning MIL frontend_tensorflow2 pipeline: 100%|██████████| 7/7 [00:00&lt;00:00, 790.57 passes/s]\nRunning MIL default pipeline: 100%|██████████| 95/95 [00:00&lt;00:00, 133.91 passes/s]\nRunning MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00&lt;00:00, 276.41 passes/s]\n\n\nSuccessfully generated 'TrafficSignClassifier.mlpackage' in your sidebar files!\n\n\nOnce you have built and trained your model, the next step is to run the mini holdout images through it and see how well your model does at making predictions for images it has never seen before.\nSince loading these images and formatting them for the model can be tricky, you may find the following code useful. This code only uses your model to predict the class label for a given image. You’ll still need to compare those predictions to the “ground truth” class labels in mini_holdout_answers.csv to evaluate how well the model does.\nPreviously, you were given a file that would check your results. This time you’re given the answers to the first mini holdout dataset. You’ll need to compare those predictions against the “ground truth” class labels in mini_holdout_answers.csv to evaluate how well the model does.\nMake sure to use the insights gained from the mini hold out dataset in your executive summary.\nfrom tensorflow.keras.preprocessing import image_dataset_from_directory\ntest_dir = '/content/'\n\ntest_datagen = ImageDataGenerator(rescale=1./255)\ntest_generator = test_datagen.flow_from_directory(\n        test_dir,\n        classes=['mini_holdout'],\n        target_size=image_size,\n        class_mode='sparse',\n        shuffle=False)\nprobabilities = model.predict(test_generator)\npredictions = [np.argmax(probas) for probas in probabilities]\n\n# ==========================================\n# 7. Evaluate Performance Against Ground Truth\n# ==========================================\nfrom sklearn.metrics import classification_report, accuracy_score\n\n# 1. Load the ground truth answers from the csv\nanswers_df = pd.read_csv('/content/mini_holdout_answers.csv')\n\n# Extract the true class labels column (assuming the column name is 'ClassId')\n# If your CSV uses a different column header name like 'Class', change 'ClassId' below\ny_true = answers_df['ClassId'].values\ny_pred = predictions\n\n# 2. Calculate global accuracy\ntotal_accuracy = accuracy_score(y_true, y_pred)\nprint(f\"Overall Mini Holdout Accuracy: {total_accuracy * 100:.2f}%\\n\")\n\n# 3. Generate the class-by-class evaluation breakdown\n# This will show you exactly which signs your model nailed and where it struggled\nprint(\"Detailed Classification Report:\")\nprint(classification_report(y_true, y_pred, digits=4))\n\nOverall Mini Holdout Accuracy: 95.52%\n\nDetailed Classification Report:\n              precision    recall  f1-score   support\n\n           1     1.0000    1.0000    1.0000        11\n           2     1.0000    1.0000    1.0000         8\n           3     1.0000    0.9000    0.9474        10\n           4     1.0000    1.0000    1.0000         9\n           5     0.8333    1.0000    0.9091         5\n           6     1.0000    1.0000    1.0000         3\n           7     1.0000    0.8750    0.9333         8\n           8     0.8333    0.8333    0.8333         6\n           9     0.9091    1.0000    0.9524        10\n          10     1.0000    1.0000    1.0000        12\n          11     1.0000    1.0000    1.0000         8\n          12     1.0000    1.0000    1.0000         7\n          13     1.0000    1.0000    1.0000        10\n          14     1.0000    1.0000    1.0000         4\n          15     1.0000    1.0000    1.0000         2\n          16     1.0000    1.0000    1.0000         5\n          17     1.0000    1.0000    1.0000         7\n          18     0.8889    1.0000    0.9412         8\n          20     1.0000    1.0000    1.0000         2\n          21     1.0000    1.0000    1.0000         3\n          22     1.0000    1.0000    1.0000         1\n          23     1.0000    1.0000    1.0000         2\n          24     1.0000    1.0000    1.0000         2\n          25     1.0000    0.9286    0.9630        14\n          26     1.0000    1.0000    1.0000         3\n          27     1.0000    1.0000    1.0000         2\n          28     0.6667    1.0000    0.8000         2\n          29     1.0000    0.6667    0.8000         3\n          30     1.0000    0.5000    0.6667         4\n          31     0.3333    1.0000    0.5000         1\n          32     1.0000    1.0000    1.0000         1\n          33     1.0000    1.0000    1.0000         7\n          34     1.0000    0.5000    0.6667         2\n          35     1.0000    1.0000    1.0000         4\n          36     1.0000    1.0000    1.0000         2\n          38     0.9000    1.0000    0.9474         9\n          39     0.0000    0.0000    0.0000         0\n          40     1.0000    1.0000    1.0000         2\n          41     1.0000    0.5000    0.6667         2\n\n    accuracy                         0.9552       201\n   macro avg     0.9324    0.9155    0.9109       201\nweighted avg     0.9708    0.9552    0.9571       201\n\n\n\n/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n\n\n##Mini Hold out Dataset\nOnce you feel confident, you will need to predict for the full holdout dataset using the following code, and submit your csv file:\nfrom tensorflow.keras.preprocessing import image_dataset_from_directory\ntest_dir = '/content/'\n\ntest_datagen = ImageDataGenerator(rescale=1./255)\ntest_generator = test_datagen.flow_from_directory(\n        test_dir,\n        classes=['holdout'],\n        target_size=image_size,\n        class_mode='sparse',\n        shuffle=False)\nprobabilities = model.predict(test_generator)\npredictions = [np.argmax(probas) for probas in probabilities]\n\n# ==========================================\n# 8. Generate Full Holdout Predictions\n# ==========================================\nimport os\nimport pandas as pd\nimport numpy as np\nfrom tensorflow.keras.preprocessing.image import ImageDataGenerator\n\n# 1. Setup the generator for the full holdout folder\ntest_dir = '/content/'\nimage_size = (100, 100) # Matching your trained model size\n\nfull_holdout_datagen = ImageDataGenerator(rescale=1./255)\n\nfull_holdout_generator = full_holdout_datagen.flow_from_directory(\n    test_dir,\n    classes=['holdout'],      # Target the full holdout directory\n    target_size=image_size,\n    class_mode='sparse',\n    shuffle=False             # DO NOT SHUFFLE so predictions line up with filenames\n)\n\n# 2. Predict probabilities and extract class indices\nprint(\"Predicting on full holdout dataset...\")\nprobabilities = model.predict(full_holdout_generator)\npredictions = [np.argmax(probas) for probas in probabilities]\n\n# 3. Extract the clean filenames (e.g., \"00000.ppm\")\nfilenames = [os.path.basename(f) for f in full_holdout_generator.filenames]\n\n# 4. Create the final submission DataFrame matching course requirements\nsubmission_df = pd.DataFrame({\n    'Filename': filenames,\n    'ClassId': predictions\n})\n\n# Save to a CSV file in your Colab sidebar\nsubmission_df.to_csv('holdout_predictions.csv', index=False)\nprint(\"Successfully generated 'holdout_predictions.csv'!\")\n\n\nFound 12630 images belonging to 1 classes.\n\nPredicting on full holdout dataset...\n\n395/395 ━━━━━━━━━━━━━━━━━━━━ 18s 46ms/step\n\nSuccessfully generated 'holdout_predictions.csv'!\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "resume.html",
@@ -540,5 +370,182 @@
     "title": "Rose Wang’s CV",
     "section": "",
     "text": "[cite_start]Languages: Python, Java, JavaScript, TypeScript, C++ [cite: 5]\n[cite_start]Web & UI: HTML, CSS, Tailwind CSS [cite: 7]\n[cite_start]Cloud & Tools: AWS, SQL, Git/GitHub, Postman, Chrome DevTools [cite: 8]\n[cite_start]Testing: Selenium, Storybook [cite: 9]"
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html",
+    "href": "notebooks/module01-assessment-polars.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This assignment will test how well you’re able to perform various data science-related tasks.\nEach Problem Group below will center around a particular dataset that you have worked with before.\nTo ensure you receive full credit for a question, make sure you demonstrate the appropriate polars, lets-plot, or other commands as requested in the provided code blocks.\nYou may find that some questions require multiple steps to fully answer. Others require some mental arithmetic in addition to polars commands. Use your best judgment."
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html#submission",
+    "href": "notebooks/module01-assessment-polars.html#submission",
+    "title": "Introduction",
+    "section": "Submission",
+    "text": "Submission\nEach problem group asks a series of questions. This assignment consists of two submissions:\n\nAfter completing the questions below, open the Module 01 Assessment Quiz in Canvas and enter your answers to these questions there.\nAfter completing and submitting the quiz, save this Colab notebook as a GitHub Gist (You’ll need to create a GitHub account for this), by selecting Save a copy as a GitHub Gist from the File menu above.\nIn Canvas, open the Module 01 Assessment GitHub Gist assignment and paste the GitHub Gist URL for this notebook. Then submit that assignment."
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html#problem-group-1",
+    "href": "notebooks/module01-assessment-polars.html#problem-group-1",
+    "title": "Introduction",
+    "section": "Problem Group 1",
+    "text": "Problem Group 1\nFor the questions in this group, you’ll work with the Netflix Movies Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv\n\nQuestion 1\nLoad the dataset into a Polars data frame and determine what data type is used to store the release_year feature.\n\nimport polars as pl\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv\"\ndf = pl.read_csv(url)\nprint(df['release_year'].dtype)\n\nInt64\n\n\n\n\nQuestion 2\nFilter your dataset so it contains only TV Shows. How many of those TV Shows were rated TV-Y7?\n\ndf_T = df.filter((pl.col(\"type\") == \"TV Show\") & (pl.col(\"rating\") == \"TV-Y7\"))\ndf_T.height\n\n100\n\n\n\n\nQuestion 3\nFurther filter your dataset so it only contains TV Shows released between the years 2000 and 2009 inclusive. How many of those shows were rated TV-Y7?\n\ndf_test = df.filter((pl.col(\"type\") == \"TV Show\") & (pl.col(\"release_year\") &lt;= 2009) & (pl.col(\"release_year\") &gt;= 2000 ) & (pl.col(\"rating\") == \"TV-Y7\"))\ndf_test\n\n\nshape: (4, 12)\n\n\n\nshow_id\ntype\ntitle\ndirector\ncast\ncountry\ndate_added\nrelease_year\nrating\nduration\nlisted_in\ndescription\n\n\ni64\nstr\nstr\nstr\nstr\nstr\nstr\ni64\nstr\nstr\nstr\nstr\n\n\n\n\n70213120\n\"TV Show\"\n\"Beyblade: Metal Fusion\"\nnull\n\"Aki Kanada, Satoshi Hino, Emir…\n\"Japan\"\n\"December 15, 2017\"\n2009\n\"TV-Y7\"\n\"1 Season\"\n\"Anime Series, Kids' TV\"\n\"In this anime adventure series…\n\n\n70177034\n\"TV Show\"\n\"Yu-Gi-Oh!\"\nnull\n\"Dan Green, Eric Stuart, Amy Bi…\n\"Japan\"\n\" March 31, 2018\"\n2005\n\"TV-Y7\"\n\"5 Seasons\"\n\"Anime Series, Kids' TV\"\n\"The lives of young Yugi Moto a…\n\n\n70308794\n\"TV Show\"\n\"What's New Scooby-Doo?\"\nnull\n\"Frank Welker, Casey Kasem, Min…\n\"United States\"\n\" December 15, 2019\"\n2005\n\"TV-Y7\"\n\"3 Seasons\"\n\"Kids' TV, TV Comedies\"\n\"Scooby-Doo and the gang enter …\n\n\n60036794\n\"TV Show\"\n\"Sonic X\"\nnull\n\"Suzanne Goldish, Dan Green, Ja…\n\"Japan\"\n\" December 1, 2019\"\n2004\n\"TV-Y7\"\n\"4 Seasons\"\n\"Anime Series, Kids' TV\"\n\"While battling the evil Dr. Eg…"
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html#problem-group-2",
+    "href": "notebooks/module01-assessment-polars.html#problem-group-2",
+    "title": "Introduction",
+    "section": "Problem Group 2",
+    "text": "Problem Group 2\nFor the questions in this group, you’ll work with the Cereal Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv\n\nQuestion 4\nAfter importing the dataset into a polars data frame, determine the median amount of protein in cereal brands manufactured by Kelloggs. (mfr code “K”)\n\nimport polars as pl\n\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv\"\ndf = pl.read_csv(url)\ntest=df.filter(mfr=\"K\")\ntest['protein'].median()\n\n\nshape: (23, 16)\n\n\n\nname\nmfr\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\n\n\nstr\nstr\nstr\ni64\ni64\ni64\ni64\nf64\nf64\ni64\ni64\ni64\ni64\nf64\nf64\nf64\n\n\n\n\n\"All-Bran\"\n\"K\"\n\"C\"\n70\n4\n1\n260\n9.0\n7.0\n5\n320\n25\n3\n1.0\n0.33\n59.425505\n\n\n\"All-Bran with Extra Fiber\"\n\"K\"\n\"C\"\n50\n4\n0\n140\n14.0\n8.0\n0\n330\n25\n3\n1.0\n0.5\n93.704912\n\n\n\"Apple Jacks\"\n\"K\"\n\"C\"\n110\n2\n0\n125\n1.0\n11.0\n14\n30\n25\n2\n1.0\n1.0\n33.174094\n\n\n\"Corn Flakes\"\n\"K\"\n\"C\"\n100\n2\n0\n290\n1.0\n21.0\n2\n35\n25\n1\n1.0\n1.0\n45.863324\n\n\n\"Corn Pops\"\n\"K\"\n\"C\"\n110\n1\n0\n90\n1.0\n13.0\n12\n20\n25\n2\n1.0\n1.0\n35.782791\n\n\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n…\n\n\n\"Raisin Bran\"\n\"K\"\n\"C\"\n120\n3\n1\n210\n5.0\n14.0\n12\n240\n25\n2\n1.33\n0.75\n39.259197\n\n\n\"Raisin Squares\"\n\"K\"\n\"C\"\n90\n2\n0\n0\n2.0\n15.0\n6\n110\n25\n3\n1.0\n0.5\n55.333142\n\n\n\"Rice Krispies\"\n\"K\"\n\"C\"\n110\n2\n0\n290\n0.0\n22.0\n3\n35\n25\n1\n1.0\n1.0\n40.560159\n\n\n\"Smacks\"\n\"K\"\n\"C\"\n110\n2\n1\n70\n1.0\n9.0\n15\n40\n25\n2\n1.0\n0.75\n31.230054\n\n\n\"Special K\"\n\"K\"\n\"C\"\n110\n6\n0\n230\n1.0\n16.0\n3\n55\n25\n1\n1.0\n1.0\n53.131324\n\n\n\n\n\n\n\n\nQuestion 5\nIn order to comply with new government regulations, all cereals must now come with a “Healthiness” rating. This rating is calculated based on this formula:\nhealthiness = (protein + fiber) / sugar\nCreate a new healthiness column populated with values based on the above formula.\nThen, determine the median healthiness value for only General Mills cereals (mfr = “G”), rounded to two decimal places.\n\nt = df.filter(mfr=\"G\")\nt = t.with_columns(healthiness = (pl.col('protein') + pl.col('fiber'))/pl.col('sugars'))\nt['healthiness'].median()\n\n0.475"
+  },
+  {
+    "objectID": "notebooks/module01-assessment-polars.html#problem-group-3",
+    "href": "notebooks/module01-assessment-polars.html#problem-group-3",
+    "title": "Introduction",
+    "section": "Problem Group 3",
+    "text": "Problem Group 3\nFor the questions in this group, you’ll work with the Titanic Dataset found at this url: https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/titanic.csv\n\nQuestion 6\nAfter loading the dataset into a polars DataFrame, create a new column called NameGroup that contains the first letter of the passenger’s surname in lower case.\nNote that in the dataset, passenger’s names are provided in the Name column and are listed as:\nSurname, Given names\nFor example, if a passenger’s Name is Braund, Mr. Owen Harris, the NameGroup column should contain the value b.\nThen count how many passengers have a NameGroup value of k.\n\nimport polars as pl\nurl = \"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/titanic.csv\"\ndf = pl.read_csv(url)\ndf_titanic = df.with_columns(NameGroup = pl.col('Name').str.slice(0, 1).str.to_lowercase())\nk_count = df_titanic.filter(NameGroup=\"k\").height\nk_count\n\n28"
+  },
+  {
+    "objectID": "Story_Telling/project4.html",
+    "href": "Story_Telling/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project5.html",
+    "href": "Story_Telling/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project2.html",
+    "href": "Story_Telling/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "exploration.html#title-2-header",
+    "href": "exploration.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project3.html",
+    "href": "Cleansing_Projects/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project1.html",
+    "href": "Cleansing_Projects/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project4.html",
+    "href": "Machine_Learning/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project5.html",
+    "href": "Machine_Learning/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project2.html",
+    "href": "Machine_Learning/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "ml.html",
+    "href": "ml.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "objectID": "ml.html#title-2-header",
+    "href": "ml.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
   }
 ]
