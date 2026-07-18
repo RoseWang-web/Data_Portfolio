@@ -348,106 +348,138 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div id="cell-0" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: After you run this cell, the training and test data will be available in</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the file browser. (Click the folder icon on the left to view it)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># If you don't see the data after the cell completes, click the refresh button</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># in the file browser (folder icon with circular arrow)</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># First, let's download and unzip the data</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>echo <span class="st">"Downloading files..."</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget <span class="op">-</span>q https:<span class="op">//</span>github.com<span class="op">/</span>byui<span class="op">-</span>cse<span class="op">/</span>cse450<span class="op">-</span>course<span class="op">/</span>raw<span class="op">/</span>master<span class="op">/</span>data<span class="op">/</span>roadsigns<span class="op">/</span>training1.<span class="bu">zip</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget <span class="op">-</span>q https:<span class="op">//</span>github.com<span class="op">/</span>byui<span class="op">-</span>cse<span class="op">/</span>cse450<span class="op">-</span>course<span class="op">/</span>raw<span class="op">/</span>master<span class="op">/</span>data<span class="op">/</span>roadsigns<span class="op">/</span>training2.<span class="bu">zip</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget <span class="op">-</span>q https:<span class="op">//</span>github.com<span class="op">/</span>byui<span class="op">-</span>cse<span class="op">/</span>cse450<span class="op">-</span>course<span class="op">/</span>raw<span class="op">/</span>master<span class="op">/</span>data<span class="op">/</span>roadsigns<span class="op">/</span>holdout.<span class="bu">zip</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget <span class="op">-</span>q https:<span class="op">//</span>github.com<span class="op">/</span>byui<span class="op">-</span>cse<span class="op">/</span>cse450<span class="op">-</span>course<span class="op">/</span>raw<span class="op">/</span>master<span class="op">/</span>data<span class="op">/</span>roadsigns<span class="op">/</span>mini_holdout.<span class="bu">zip</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget <span class="op">-</span>q https:<span class="op">//</span>github.com<span class="op">/</span>byui<span class="op">-</span>cse<span class="op">/</span>cse450<span class="op">-</span>course<span class="op">/</span>raw<span class="op">/</span>master<span class="op">/</span>data<span class="op">/</span>roadsigns<span class="op">/</span>mini_holdout_answers.csv</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>echo <span class="st">"Unzipping files..."</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>unzip <span class="op">-</span>q <span class="op">/</span>content<span class="op">/</span>training1.<span class="bu">zip</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>unzip <span class="op">-</span>q <span class="op">/</span>content<span class="op">/</span>training2.<span class="bu">zip</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>unzip <span class="op">-</span>q <span class="op">/</span>content<span class="op">/</span>holdout.<span class="bu">zip</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>unzip <span class="op">-</span>q <span class="op">/</span>content<span class="op">/</span>mini_holdout.<span class="bu">zip</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine the two traning directories</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>echo <span class="st">"Merging training data..."</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>mkdir <span class="op">/</span>content<span class="op">/</span>training</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>mv <span class="op">/</span>content<span class="op">/</span>training1<span class="op">/*</span> <span class="op">/</span>content<span class="op">/</span>training</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>mv <span class="op">/</span>content<span class="op">/</span>training2<span class="op">/*</span> <span class="op">/</span>content<span class="op">/</span>training</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Cleanup</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>echo <span class="st">"Cleaning up..."</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>rmdir <span class="op">/</span>content<span class="op">/</span>training1</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>rmdir <span class="op">/</span>content<span class="op">/</span>training2</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>rm training1.<span class="bu">zip</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>rm training2.<span class="bu">zip</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>rm holdout.<span class="bu">zip</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>rm mini_holdout.<span class="bu">zip</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>echo <span class="st">"Data ready."</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-0" class="cell" data-outputid="7cccd943-bc09-4b11-ecaa-961eb2b80caf" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> kagglehub</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Download latest version</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> kagglehub.dataset_download(<span class="st">"burgerwu/taiwan-covid19-dataset"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Path to dataset files:"</span>, path)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Downloading to /root/.cache/kagglehub/datasets/burgerwu/taiwan-covid19-dataset/5.archive...</code></pre>
 </div>
-<div id="cell-1" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import libraries</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow <span class="im">import</span> keras</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.preprocessing.image <span class="im">import</span> ImageDataGenerator</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>100%|██████████| 4.22M/4.22M [00:00&lt;00:00, 51.7MB/s]</code></pre>
 </div>
-<div id="cell-2" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We're using keras' ImageDataGenerator class to load our image data.</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># See (https://keras.io/api/preprocessing/image/#imagedatagenerator-class) for details</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># A couple of things to note:</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. We're specifying a number for the seed, so we'll always get the same shuffle and split of our images.</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Class names are inferred automatically from the image subdirectory names.</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. We're splitting the training data into 80% training, 20% validation.</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>training_dir <span class="op">=</span> <span class="st">'/content/training/'</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>image_size <span class="op">=</span> (<span class="dv">100</span>, <span class="dv">100</span>)</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Split up the training data images into training and validations sets</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># We'll use and ImageDataGenerator to do the splits</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># ImageDataGenerator can also be used to do preprocessing and agumentation on the files as can be seen with rescale</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>train_datagen <span class="op">=</span> ImageDataGenerator(</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>        rescale<span class="op">=</span><span class="fl">1.</span><span class="op">/</span><span class="dv">255</span>,</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        validation_split<span class="op">=</span><span class="fl">.2</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>validation_datagen <span class="op">=</span> ImageDataGenerator(</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        rescale<span class="op">=</span><span class="fl">1.</span><span class="op">/</span><span class="dv">255</span>,</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        validation_split<span class="op">=</span><span class="fl">.2</span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>train_generator <span class="op">=</span> train_datagen.flow_from_directory(</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        training_dir,</span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>        target_size <span class="op">=</span> image_size,</span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>        subset<span class="op">=</span><span class="st">"training"</span>,</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>        batch_size<span class="op">=</span><span class="dv">32</span>,</span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>        class_mode<span class="op">=</span><span class="st">'sparse'</span>,</span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>        seed<span class="op">=</span><span class="dv">42</span>,shuffle<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>validation_generator <span class="op">=</span> validation_datagen.flow_from_directory(</span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>        training_dir,</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>        target_size<span class="op">=</span>image_size,</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>        batch_size<span class="op">=</span><span class="dv">32</span>,</span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>        class_mode<span class="op">=</span><span class="st">'sparse'</span>,</span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>        subset<span class="op">=</span><span class="st">"validation"</span>,</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>        seed<span class="op">=</span><span class="dv">42</span>)</span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Extracting files...</code></pre>
 </div>
-<div id="cell-3" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#these might come in handy</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>target_names <span class="op">=</span> [<span class="st">'Speed_20'</span>, <span class="st">'Speed_30'</span>, <span class="st">'Speed_50'</span>, <span class="st">'Speed_60'</span>, <span class="st">'Speed_70'</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Speed_80'</span>,<span class="st">'Speed_Limit_Ends'</span>, <span class="st">'Speed_100'</span>, <span class="st">'Speed_120'</span>, <span class="st">'Overtaking_Prohibited'</span>,</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Overtakeing_Prohibited_Trucks'</span>, <span class="st">'Priority'</span>, <span class="st">'Priority_Road_Ahead'</span>, <span class="st">'Yield'</span>, <span class="st">'STOP'</span>,</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Entry_Forbidden'</span>, <span class="st">'Trucks_Forbidden'</span>, <span class="st">'No_Entry(one-way traffic)'</span>, <span class="st">'General Danger(!)'</span>, <span class="st">'Left_Curve_Ahead'</span>,</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Right_Curve_Ahead'</span>, <span class="st">'Double_Curve'</span>, <span class="st">'Poor_Surface_Ahead'</span>, <span class="st">'Slippery_Surface_Ahead'</span>, <span class="st">'Road_Narrows_On_Right'</span>,</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Roadwork_Ahead'</span>, <span class="st">'Traffic_Light_Ahead'</span>, <span class="st">'Warning_Pedestrians'</span>, <span class="st">'Warning_Children'</span>, <span class="st">'Warning_Bikes'</span>,</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Ice_Snow'</span>, <span class="st">'Deer_Crossing'</span>, <span class="st">'End_Previous_Limitation'</span>, <span class="st">'Turning_Right_Compulsory'</span>, <span class="st">'Turning_Left_Compulsory'</span>,</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Ahead_Only'</span>, <span class="st">'Straight_Or_Right_Mandatory'</span>, <span class="st">'Straight_Or_Left_Mandatory'</span>, <span class="st">'Passing_Right_Compulsory'</span>, <span class="st">'Passing_Left_Compulsory'</span>,</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Roundabout'</span>, <span class="st">'End_Overtaking_Prohibition'</span>, <span class="st">'End_Overtaking_Prohibition_Trucks'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Path to dataset files: /root/.cache/kagglehub/datasets/burgerwu/taiwan-covid19-dataset/versions/5</code></pre>
+</div>
+</div>
+<div id="cell-1" class="cell" data-outputid="215c04a3-f6a9-46e0-8a22-36b1b8cdb7dd" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the base directory where step 1 downloaded your files</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>base_path <span class="op">=</span> <span class="st">"/root/.cache/kagglehub/datasets/burgerwu/taiwan-covid19-dataset/versions/5"</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's load the main time-series cases file</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>file_name <span class="op">=</span> <span class="st">"covid19_tw_cases_2022Oct.csv"</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>full_path <span class="op">=</span> os.path.join(base_path, file_name)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Read it into a pandas DataFrame</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(full_path)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's see the first 5 records!</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"First 5 records:"</span>)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>First 5 records:
+  Date_Confirmation County_Living  Gender  Imported Age_Group  \
+0        2020-01-22      Imported  female         1     55-59   
+1        2020-01-24      Imported  female         1     50-54   
+2        2020-01-24      Imported    male         1     55-59   
+3        2020-01-26      Imported  female         1     55-59   
+4        2020-01-27      Imported  female         1     50-54   
+
+   Number_of_Confirmed_Cases  
+0                          1  
+1                          1  
+2                          1  
+3                          1  
+4                          1  </code></pre>
+</div>
+</div>
+<div id="cell-2" class="cell" data-outputid="5c8d1024-96c0-41b4-cb00-3494bc186c74" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:408}}" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Path to your downloaded file</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"C:</span><span class="er">\</span><span class="st">Users</span><span class="er">\</span><span class="st">Rose</span><span class="er">\</span><span class="st">Downloads</span><span class="ch">\246</span><span class="st">23964</span><span class="ch">\f</span><span class="st">igshare_taiwan_covid.xlsx"</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Load the individual patient tracking data (parsing columns with dates)</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>individual_date_cols <span class="op">=</span> [</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'date_of_departure_1'</span>, <span class="st">'date_of_arrival_1'</span>, <span class="st">'date_of_departure_2'</span>,</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'date_of_arrival_2'</span>, <span class="st">'date_of_departure_3'</span>, <span class="st">'date_of_arrival_3'</span>,</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'date_of_departure_4'</span>, <span class="st">'date_of_arrival_4'</span>, <span class="st">'date_of_transit'</span>,</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'date_of_arrival_to_taiwan'</span>, <span class="st">'onset_of_symptom'</span>, <span class="st">'report_to_cdc'</span>,</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'confirmed_date'</span>, <span class="st">'icu'</span>, <span class="st">'recovery'</span>, <span class="st">'death_date'</span>,</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'date_of_contact_with_infected_case'</span>, <span class="st">'earliest_infection_date'</span>,</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'negative_test_date_1'</span>, <span class="st">'negative_test_date_2'</span>, <span class="st">'negative_test_date_3'</span>, <span class="st">'negative_test_date_4'</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>df_individual <span class="op">=</span> pd.read_excel(file_path, sheet_name<span class="op">=</span><span class="st">'Individual Data'</span>, parse_dates<span class="op">=</span>individual_date_cols)</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Load the daily summary metrics</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>df_summary <span class="op">=</span> pd.read_excel(file_path, sheet_name<span class="op">=</span><span class="st">'Summary'</span>, parse_dates<span class="op">=</span>[<span class="st">'announce_date'</span>])</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Load the testing specimen data</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>df_specimen <span class="op">=</span> pd.read_excel(file_path, sheet_name<span class="op">=</span><span class="st">'Specimen'</span>, parse_dates<span class="op">=</span>[<span class="st">'announce_date'</span>])</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Load the social network mapping (who infected whom)</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>df_edge_list <span class="op">=</span> pd.read_excel(file_path, sheet_name<span class="op">=</span><span class="st">'Edge List'</span>)</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify the datasets loaded successfully</span></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"=== Datasets Loaded Successfully ==="</span>)</span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Individual Data Rows: </span><span class="sc">{</span>df_individual<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Summary Data Rows:    </span><span class="sc">{</span>df_summary<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Specimen Data Rows:   </span><span class="sc">{</span>df_specimen<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Edge List Rows:       </span><span class="sc">{</span>df_edge_list<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_1918/1968981789.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg ansi-bold">     14</span>     <span class="ansi-blue-fg">'negative_test_date_1'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'negative_test_date_2'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'negative_test_date_3'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'negative_test_date_4'</span>
+<span class="ansi-green-fg ansi-bold">     15</span> ]
+<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg"> </span>df_individual <span class="ansi-blue-fg">=</span> pd<span class="ansi-blue-fg">.</span>read_excel<span class="ansi-blue-fg">(</span>file_path<span class="ansi-blue-fg">,</span> sheet_name<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">'Individual Data'</span><span class="ansi-blue-fg">,</span> parse_dates<span class="ansi-blue-fg">=</span>individual_date_cols<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg ansi-bold">     17</span> 
+<span class="ansi-green-fg ansi-bold">     18</span> <span class="ansi-red-fg"># 2. Load the daily summary metrics</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/excel/_base.py</span> in <span class="ansi-cyan-fg">read_excel</span><span class="ansi-blue-fg">(io, sheet_name, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, date_format, thousands, decimal, comment, skipfooter, storage_options, dtype_backend, engine_kwargs)</span>
+<span class="ansi-green-fg ansi-bold">    493</span>     <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> isinstance<span class="ansi-blue-fg">(</span>io<span class="ansi-blue-fg">,</span> ExcelFile<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg ansi-bold">    494</span>         should_close <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
+<span class="ansi-green-fg">--&gt; 495</span><span class="ansi-red-fg">         io = ExcelFile(
+</span><span class="ansi-green-fg ansi-bold">    496</span>             io<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg ansi-bold">    497</span>             storage_options<span class="ansi-blue-fg">=</span>storage_options<span class="ansi-blue-fg">,</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/excel/_base.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, path_or_buffer, engine, storage_options, engine_kwargs)</span>
+<span class="ansi-green-fg ansi-bold">   1548</span>                 ext <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">"xls"</span>
+<span class="ansi-green-fg ansi-bold">   1549</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 1550</span><span class="ansi-red-fg">                 ext = inspect_excel_format(
+</span><span class="ansi-green-fg ansi-bold">   1551</span>                     content_or_path<span class="ansi-blue-fg">=</span>path_or_buffer<span class="ansi-blue-fg">,</span> storage_options<span class="ansi-blue-fg">=</span>storage_options
+<span class="ansi-green-fg ansi-bold">   1552</span>                 )
+
+<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/excel/_base.py</span> in <span class="ansi-cyan-fg">inspect_excel_format</span><span class="ansi-blue-fg">(content_or_path, storage_options)</span>
+<span class="ansi-green-fg ansi-bold">   1400</span>         content_or_path <span class="ansi-blue-fg">=</span> BytesIO<span class="ansi-blue-fg">(</span>content_or_path<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg ansi-bold">   1401</span> 
+<span class="ansi-green-fg">-&gt; 1402</span><span class="ansi-red-fg">     with get_handle(
+</span><span class="ansi-green-fg ansi-bold">   1403</span>         content_or_path<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"rb"</span><span class="ansi-blue-fg">,</span> storage_options<span class="ansi-blue-fg">=</span>storage_options<span class="ansi-blue-fg">,</span> is_text<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span>
+<span class="ansi-green-fg ansi-bold">   1404</span>     ) as handle:
+
+<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/common.py</span> in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="ansi-green-fg ansi-bold">    880</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg ansi-bold">    881</span>             <span class="ansi-red-fg"># Binary mode</span>
+<span class="ansi-green-fg">--&gt; 882</span><span class="ansi-red-fg">             </span>handle <span class="ansi-blue-fg">=</span> open<span class="ansi-blue-fg">(</span>handle<span class="ansi-blue-fg">,</span> ioargs<span class="ansi-blue-fg">.</span>mode<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg ansi-bold">    883</span>         handles<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span>handle<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg ansi-bold">    884</span> 
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: 'figshare_taiwan_covid.xlsx'</pre>
+</div>
+</div>
 </div>
 
 
