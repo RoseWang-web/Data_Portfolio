@@ -348,7 +348,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div id="cell-0" class="cell" data-outputid="7cccd943-bc09-4b11-ecaa-961eb2b80caf" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="1">
+<p><a href="https://colab.research.google.com/github/RoseWang-web/Data_Portfolio/blob/main/notebooks/TaiwanPandemicPrediction.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<div id="cell-1" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="7cccd943-bc09-4b11-ecaa-961eb2b80caf" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> kagglehub</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Download latest version</span></span>
@@ -371,7 +372,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>Path to dataset files: /root/.cache/kagglehub/datasets/burgerwu/taiwan-covid19-dataset/versions/5</code></pre>
 </div>
 </div>
-<div id="cell-1" class="cell" data-outputid="215c04a3-f6a9-46e0-8a22-36b1b8cdb7dd" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="9">
+<div id="cell-2" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="215c04a3-f6a9-46e0-8a22-36b1b8cdb7dd" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -405,11 +406,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 4                          1  </code></pre>
 </div>
 </div>
-<div id="cell-2" class="cell" data-outputid="5c8d1024-96c0-41b4-cb00-3494bc186c74" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:408}}" data-execution_count="10">
+<div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="66518941-4f74-4216-b98d-0e28aeba0c45" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Path to your downloaded file</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"C:</span><span class="er">\</span><span class="st">Users</span><span class="er">\</span><span class="st">Rose</span><span class="er">\</span><span class="st">Downloads</span><span class="ch">\246</span><span class="st">23964</span><span class="ch">\f</span><span class="st">igshare_taiwan_covid.xlsx"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Since you uploaded it directly to Colab, the file path is just the name!</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">"figshare_taiwan_covid.xlsx"</span></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Load the individual patient tracking data (parsing columns with dates)</span></span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>individual_date_cols <span class="op">=</span> [</span>
@@ -426,59 +427,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Load the daily summary metrics</span></span>
 <span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>df_summary <span class="op">=</span> pd.read_excel(file_path, sheet_name<span class="op">=</span><span class="st">'Summary'</span>, parse_dates<span class="op">=</span>[<span class="st">'announce_date'</span>])</span>
 <span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Load the testing specimen data</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>df_specimen <span class="op">=</span> pd.read_excel(file_path, sheet_name<span class="op">=</span><span class="st">'Specimen'</span>, parse_dates<span class="op">=</span>[<span class="st">'announce_date'</span>])</span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Load the social network mapping (who infected whom)</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>df_edge_list <span class="op">=</span> pd.read_excel(file_path, sheet_name<span class="op">=</span><span class="st">'Edge List'</span>)</span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify the datasets loaded successfully</span></span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"=== Datasets Loaded Successfully ==="</span>)</span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Individual Data Rows: </span><span class="sc">{</span>df_individual<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Summary Data Rows:    </span><span class="sc">{</span>df_summary<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Specimen Data Rows:   </span><span class="sc">{</span>df_specimen<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Edge List Rows:       </span><span class="sc">{</span>df_edge_list<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_1918/1968981789.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg ansi-bold">     14</span>     <span class="ansi-blue-fg">'negative_test_date_1'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'negative_test_date_2'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'negative_test_date_3'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'negative_test_date_4'</span>
-<span class="ansi-green-fg ansi-bold">     15</span> ]
-<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg"> </span>df_individual <span class="ansi-blue-fg">=</span> pd<span class="ansi-blue-fg">.</span>read_excel<span class="ansi-blue-fg">(</span>file_path<span class="ansi-blue-fg">,</span> sheet_name<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">'Individual Data'</span><span class="ansi-blue-fg">,</span> parse_dates<span class="ansi-blue-fg">=</span>individual_date_cols<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">     17</span> 
-<span class="ansi-green-fg ansi-bold">     18</span> <span class="ansi-red-fg"># 2. Load the daily summary metrics</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/excel/_base.py</span> in <span class="ansi-cyan-fg">read_excel</span><span class="ansi-blue-fg">(io, sheet_name, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, date_format, thousands, decimal, comment, skipfooter, storage_options, dtype_backend, engine_kwargs)</span>
-<span class="ansi-green-fg ansi-bold">    493</span>     <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> isinstance<span class="ansi-blue-fg">(</span>io<span class="ansi-blue-fg">,</span> ExcelFile<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">    494</span>         should_close <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
-<span class="ansi-green-fg">--&gt; 495</span><span class="ansi-red-fg">         io = ExcelFile(
-</span><span class="ansi-green-fg ansi-bold">    496</span>             io<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg ansi-bold">    497</span>             storage_options<span class="ansi-blue-fg">=</span>storage_options<span class="ansi-blue-fg">,</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/excel/_base.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, path_or_buffer, engine, storage_options, engine_kwargs)</span>
-<span class="ansi-green-fg ansi-bold">   1548</span>                 ext <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">"xls"</span>
-<span class="ansi-green-fg ansi-bold">   1549</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1550</span><span class="ansi-red-fg">                 ext = inspect_excel_format(
-</span><span class="ansi-green-fg ansi-bold">   1551</span>                     content_or_path<span class="ansi-blue-fg">=</span>path_or_buffer<span class="ansi-blue-fg">,</span> storage_options<span class="ansi-blue-fg">=</span>storage_options
-<span class="ansi-green-fg ansi-bold">   1552</span>                 )
-
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/excel/_base.py</span> in <span class="ansi-cyan-fg">inspect_excel_format</span><span class="ansi-blue-fg">(content_or_path, storage_options)</span>
-<span class="ansi-green-fg ansi-bold">   1400</span>         content_or_path <span class="ansi-blue-fg">=</span> BytesIO<span class="ansi-blue-fg">(</span>content_or_path<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">   1401</span> 
-<span class="ansi-green-fg">-&gt; 1402</span><span class="ansi-red-fg">     with get_handle(
-</span><span class="ansi-green-fg ansi-bold">   1403</span>         content_or_path<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"rb"</span><span class="ansi-blue-fg">,</span> storage_options<span class="ansi-blue-fg">=</span>storage_options<span class="ansi-blue-fg">,</span> is_text<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span>
-<span class="ansi-green-fg ansi-bold">   1404</span>     ) as handle:
-
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/pandas/io/common.py</span> in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-fg ansi-bold">    880</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg ansi-bold">    881</span>             <span class="ansi-red-fg"># Binary mode</span>
-<span class="ansi-green-fg">--&gt; 882</span><span class="ansi-red-fg">             </span>handle <span class="ansi-blue-fg">=</span> open<span class="ansi-blue-fg">(</span>handle<span class="ansi-blue-fg">,</span> ioargs<span class="ansi-blue-fg">.</span>mode<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    883</span>         handles<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span>handle<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg ansi-bold">    884</span> 
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: 'figshare_taiwan_covid.xlsx'</pre>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify the datasets loaded successfully</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"=== Datasets Loaded Successfully ==="</span>)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Individual Data Rows: </span><span class="sc">{</span>df_individual<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Summary Data Rows:    </span><span class="sc">{</span>df_summary<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>=== Datasets Loaded Successfully ===
+Individual Data Rows: 578
+Summary Data Rows:    783</code></pre>
 </div>
+</div>
+<div id="cell-4" class="cell" data-outputid="d742acb4-4a73-46cf-c64f-1dee0adb77d5" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="26">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Ensure the date column is in datetime format</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Date_Confirmation'</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">'Date_Confirmation'</span>])</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Filter out 'Imported' cases to isolate local municipality transmission patterns</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>df_local <span class="op">=</span> df[df[<span class="st">'County_Living'</span>] <span class="op">!=</span> <span class="st">'Imported'</span>].copy()</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Pivot the data to create a daily grid: Dates as index, Counties as columns</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>df_daily_grid <span class="op">=</span> df_local.pivot_table(</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    index<span class="op">=</span><span class="st">'Date_Confirmation'</span>,</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    columns<span class="op">=</span><span class="st">'County_Living'</span>,</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    values<span class="op">=</span><span class="st">'Number_of_Confirmed_Cases'</span>,</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    aggfunc<span class="op">=</span><span class="st">'sum'</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>).fillna(<span class="dv">0</span>)</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Resample the daily data into weekly totals (resampling by 'W' aggregates by week ending Sunday)</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>df_weekly <span class="op">=</span> df_daily_grid.resample(<span class="st">'W'</span>).<span class="bu">sum</span>()</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Let's look at the top 5 most affected municipalities to keep our baseline model highly focused</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>top_municipalities <span class="op">=</span> df_weekly.<span class="bu">sum</span>().nlargest(<span class="dv">5</span>).index.tolist()</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>df_forecasting_data <span class="op">=</span> df_weekly[top_municipalities]</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"=== Week-Over-Week Preprocessing Complete ==="</span>)</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Time-series shape (Weeks x Municipalities): </span><span class="sc">{</span>df_forecasting_data<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Top Municipalities targeted for forecasting:"</span>)</span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(top_municipalities)</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Latest weekly case baselines:"</span>)</span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_forecasting_data.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>=== Week-Over-Week Preprocessing Complete ===
+Time-series shape (Weeks x Municipalities): (145, 5)
+
+Top Municipalities targeted for forecasting:
+['New Taipei City', 'Taichung City', 'Taoyuan City', 'Kaohsiung City', 'Taipei City']
+
+Latest weekly case baselines:
+County_Living      New Taipei City  Taichung City  Taoyuan City  \
+Date_Confirmation                                                 
+2022-10-09                 65878.0        40800.0       34471.0   
+2022-10-16                 60260.0        40337.0       32014.0   
+2022-10-23                 49634.0        35020.0       26568.0   
+2022-10-30                 42203.0        32548.0       23548.0   
+2022-11-06                  5653.0         4732.0        3017.0   
+
+County_Living      Kaohsiung City  Taipei City  
+Date_Confirmation                               
+2022-10-09                33448.0      34139.0  
+2022-10-16                35170.0      30094.0  
+2022-10-23                32396.0      24625.0  
+2022-10-30                29800.0      21282.0  
+2022-11-06                 4285.0       3033.0  </code></pre>
 </div>
 </div>
 
